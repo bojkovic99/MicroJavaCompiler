@@ -1,0 +1,442 @@
+
+package rs.ac.bg.etf.pp1;
+import java.util.*;
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	Logger log = Logger.getLogger(getClass());
+	Boolean error_det = false;
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    error_det = true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+
+:}
+
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, EQUAL, RETURN, PLUS, COMMA, PRINT, VOID;
+terminal Integer NUMBER;
+terminal String IDENT;
+terminal String CHARCONST;
+terminal  String BOOLCONST;
+terminal IF, ELSE, MANJE, LOGICKOI, EXTENDS, NEW, SWITCH, MINUS;
+terminal MINUSMINUS, PLUSPLUS, PROCENAT, LOGICKOILI, PODELJENO, CONST, VECEJEDNAKO,ZVEZDICA, TACKA, ENUM;
+terminal MANJEJEDNAKO, RAZLICITO, JEDNAKOJEDNAKO, BREAK, CASE, VECE, READ, PITANJE, DVOTACKA, WHILE, DUGLASTA, LUGLASTA, DO, CLASS;
+terminal  CONTINUE; 
+
+nonterminal DeclList DeclList;
+nonterminal  Decl Decl;
+nonterminal VarDekl VarDekl;
+nonterminal ClassDekl ClassDekl;
+nonterminal ErrorPom ErrorPom;
+nonterminal DoPocetno DoPocetno;
+nonterminal WhilePocetno WhilePocetno;
+nonterminal Prosirena Prosirena;
+nonterminal ListaVarDekl ListaVarDekl;
+nonterminal MozdaTelo MozdaTelo;
+nonterminal Telo Telo;
+nonterminal MethodDeclList MethodDeclList;
+nonterminal MethodDecl MethodDecl;
+nonterminal FormPars FormPars;
+nonterminal Statement Statement;
+nonterminal ListaCaseNaredbi ListaCaseNaredbi;
+nonterminal CaseNaredba CaseNaredba;
+nonterminal StatementLista StatementLista;
+nonterminal MozdaNumConst MozdaNumConst;
+nonterminal Matched Matched;
+nonterminal Unmatched Unmatched;
+nonterminal  ActPars ActPars;
+nonterminal MozdaActPars MozdaActPars;
+nonterminal ActParsPrvi ActParsPrvi;
+nonterminal ActParsLista ActParsLista;
+nonterminal Izrazi Izrazi;
+nonterminal ListaExpr ListaExpr;
+nonterminal Assignop Assignop;
+nonterminal Relop Relop;
+nonterminal Addop Addop;
+nonterminal Mulop Mulop;
+nonterminal  MulFact MulFact;
+nonterminal NoviIzraz2 NoviIzraz2;
+nonterminal PrviArgument PrviArgument;
+nonterminal   Operacija Operacija;
+nonterminal Operacija1 Operacija1 ;
+nonterminal CondFact CondFact;
+nonterminal CondTerm CondTerm;
+nonterminal Condition Condition;
+nonterminal ListaCondTerm ListaCondTerm;
+nonterminal  ListaCondFact ListaCondFact;
+nonterminal  MozdaRelOpExpr MozdaRelOpExpr;
+nonterminal DesStatement DesStatement;
+nonterminal PrviCondFact PrviCondFact ;
+nonterminal PocinjeElse PocinjeElse;
+nonterminal PreskociEl PreskociEl;
+nonterminal TacanIfUslov TacanIfUslov;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ImePrograma, Program, ConstDekl, JosParametara,JosPars, PovratnaVrednsot, ListaMulFact, ImeNiza, Parametar;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Konstante, PrvaConst, MozdaNiz, UslovTernarni, PrvaOpcijaTer, DrugaOpcijaTer, Pomocni;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct MozdaKonstante , Term, Factor, Expr2, Expr1, Expr, NoviSimbol, Opcije, MozdaExpr, ExprPomRel;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj NovaProm, Designator, ListaDes, MozdaMinus, ListaOperacija;
+
+
+
+precedence left ELSE;
+
+Program 		::= (Program) PROG ImePrograma:p DeclList:D1 LBRACE:oProg MethodDeclList:M2 RBRACE:zProg {: RESULT=new Program(p, D1, M2); RESULT.setLine(pleft); :};
+
+ImePrograma 	::= (ImePrograma) IDENT:ImePrograma {: RESULT=new ImePrograma(ImePrograma); RESULT.setLine(ImeProgramaleft); :};
+
+DeclList 		::= (Declarations) DeclList:D1 Decl:D2 {: RESULT=new Declarations(D1, D2); RESULT.setLine(D1left); :}
+					|
+					(NoVarDecl) {: RESULT=new NoVarDecl(); :} /* epsilon */
+					;
+
+Decl 			::= (VarDeklaracija) VarDekl:V1 {: RESULT=new VarDeklaracija(V1); RESULT.setLine(V1left); :} 
+					| 
+					(ConstDeklaracija) ConstDekl:C1 {: RESULT=new ConstDeklaracija(C1); RESULT.setLine(C1left); :} 
+					| 
+					(ClassDeklaracija) ClassDekl:C1 {: RESULT=new ClassDeklaracija(C1); RESULT.setLine(C1left); :} 
+					;
+
+ConstDekl 		::= (ConstDekl)  CONST Type:TipKonstante PrvaConst:pc MozdaKonstante:MozKon SEMI {: RESULT=new ConstDekl(TipKonstante, pc, MozKon); RESULT.setLine(TipKonstanteleft); :};
+		
+PrvaConst       ::= (PrvaConst)  IDENT:imeKonstante EQUAL:Jednakost1 Konstante:Konstanta {: RESULT=new PrvaConst(imeKonstante, Konstanta); RESULT.setLine(imeKonstanteleft); :};
+					
+Konstante 		::=  (KonstantaNum) NUMBER:numerickaKonstanta {: RESULT=new KonstantaNum(numerickaKonstanta); RESULT.setLine(numerickaKonstantaleft); :}
+					 | 
+					 (KonstantaCHAR) CHARCONST:slovnaKonstanta {: RESULT=new KonstantaCHAR(slovnaKonstanta); RESULT.setLine(slovnaKonstantaleft); :} 
+					 | 
+					 (KonstantaBOOL) BOOLCONST:tacnoNetacno {: RESULT=new KonstantaBOOL(tacnoNetacno); RESULT.setLine(tacnoNetacnoleft); :}
+					 ;
+					 
+MozdaKonstante 	::= (MozdaKonstantica) MozdaKonstante:PostojiPrethodna COMMA IDENT:imeKonstNiz EQUAL:Jednakost2 Konstante:k {: RESULT=new MozdaKonstantica(PostojiPrethodna, imeKonstNiz, k); RESULT.setLine(PostojiPrethodnaleft); :} 
+					| 
+					(NoKonstanta) {: RESULT=new NoKonstanta(); :} /* epsilon */;
+
+VarDekl 		::= (VarDekla) Type:tipPromenljive IDENT:imePromenljive MozdaNiz:MozdaJeNiz JosParametara:ProveraZaParametre SEMI:zZP {: RESULT=new VarDekla(tipPromenljive, imePromenljive, MozdaJeNiz, ProveraZaParametre); RESULT.setLine(tipPromenljiveleft); :}
+				    |
+				     error JosParametara:l SEMI:a {: parser.report_error("Izvrsen oporavak od greske -----  na liniji  "+( lleft < aleft?lleft:aleft) , null);  :} {: RESULT=new VarDeklDerived1(l); RESULT.setLine(lleft); :} 
+				   ;
+				    
+MozdaNiz 		::= (JesteNiz) LUGLASTA:oUN DUGLASTA:zUN {: RESULT=new JesteNiz(); :} 
+					|
+					(NijeNiz) {: RESULT=new NijeNiz(); :} /* epsilon */
+					;
+					
+JosParametara 	::= (ImaJosParametara) JosParametara:J1 COMMA NovaProm:NovaPromenkjiva {: RESULT=new ImaJosParametara(J1, NovaPromenkjiva); RESULT.setLine(J1left); :}
+					| 
+					(ImaJosParametaraError) JosParametara:J1 COMMA ErrorPom:E2 {: RESULT=new ImaJosParametaraError(J1, E2); RESULT.setLine(J1left); :}
+					|
+					 (NemaViseParametara) {: RESULT=new NemaViseParametara(); :}   /* epsilon */
+					 ;
+
+ErrorPom 		::= error:e {: parser.report_error("Izvrsen oporavak od greske na liniji  "+eleft, null);  :} {: RESULT=new ErrorPomDerived1(); :} ;
+
+NovaProm        ::= (NovaPromenljivaPostoji) IDENT:ImeNovePromenljive MozdaNiz:MozdaJePonovoNiz {: RESULT=new NovaPromenljivaPostoji(ImeNovePromenljive, MozdaJePonovoNiz); RESULT.setLine(ImeNovePromenljiveleft); :};
+
+ClassDekl 		::= (ClassDecl) CLASS IDENT:imeKlase Prosirena:P1 LBRACE:oZK ListaVarDekl:L2 MozdaTelo:M3  RBRACE:zZK {: RESULT=new ClassDecl(imeKlase, P1, L2, M3); RESULT.setLine(imeKlaseleft); :};
+
+ListaVarDekl 	::= (JesteListaVarDekl) ListaVarDekl:L1 VarDekl:V2 {: RESULT=new JesteListaVarDekl(L1, V2); RESULT.setLine(L1left); :}  
+					| (NijeListaaa) {: RESULT=new NijeListaaa(); :}/* epsilon */
+					;
+
+
+					
+Prosirena 		::= (JesteProsirena) EXTENDS Type:TipIzKlase {: RESULT=new JesteProsirena(TipIzKlase); RESULT.setLine(TipIzKlaseleft); :}
+ 					|
+ 					 (NijeProsirena) {: RESULT=new NijeProsirena(); :} /* epsilon */;
+ 					 
+MozdaTelo 		::= (ImaTelo) LBRACE:otvorena1 Telo:T1 {: RESULT=new ImaTelo(T1); RESULT.setLine(T1left); :} | (NemaTela) {: RESULT=new NemaTela(); :} /* epsilon */ ;
+Telo 			::= (Telo) MethodDeclList:M1 RBRACE:zatvorena1 {: RESULT=new Telo(M1); RESULT.setLine(M1left); :};
+
+Type 			::= (Type) IDENT:typeName {: RESULT=new Type(typeName); RESULT.setLine(typeNameleft); :};
+		
+MethodDeclList 	::= (JesteListaMethodDec) MethodDeclList:M1 MethodDecl:M2 {: RESULT=new JesteListaMethodDec(M1, M2); RESULT.setLine(M1left); :} 
+					|
+					(NijeLista) {: RESULT=new NijeLista(); :} /* epsilon */
+					;
+							
+MethodDecl 		::= (ZavrsenaFunkcija) PovratnaVrednsot:PovVrediIme  LPAREN:otvorenaM FormPars:F1 RPAREN:zatvorenaM ListaVarDekl:L2 LBRACE:oLVD StatementLista:S3 RBRACE:zLVD {: RESULT=new ZavrsenaFunkcija(PovVrediIme, F1, L2, S3); RESULT.setLine(PovVrediImeleft); :};
+
+PovratnaVrednsot::= (ImaPovratnuVrednost) Type:povratnaVrednostNijeVoid IDENT:ImeFunkcije {: RESULT=new ImaPovratnuVrednost(povratnaVrednostNijeVoid, ImeFunkcije); RESULT.setLine(povratnaVrednostNijeVoidleft); :}
+					| 
+					(PovratnaVrVoid) VOID IDENT:ImeFje {: RESULT=new PovratnaVrVoid(ImeFje); RESULT.setLine(ImeFjeleft); :}
+					;
+					
+FormPars 		::= (Parametard) PrviArgument:P1 JosPars:J2 {: RESULT=new Parametard(P1, J2); RESULT.setLine(P1left); :} 
+					| 
+					(NemaParaetaraFunkcije) {: RESULT=new NemaParaetaraFunkcije(); :} /* epsilon */
+					;
+PrviArgument   ::= (PrviArgumentic) Type:tipProm IDENT:formalniParametar MozdaNiz:MaybeExpr {: RESULT=new PrviArgumentic(tipProm, formalniParametar, MaybeExpr); RESULT.setLine(tipPromleft); :};
+					
+JosPars 		::= (ImaJosPars) JosPars:J1 COMMA Parametar:P2 {: RESULT=new ImaJosPars(J1, P2); RESULT.setLine(J1left); :}
+					| 
+					(NemaViseParam) {: RESULT=new NemaViseParam(); :} /* epsilon*/
+					;
+
+Parametar  	::= (ParametarFje) Type:tip4 IDENT:KoZnaKo MozdaNiz:MN {: RESULT=new ParametarFje(tip4, KoZnaKo, MN); RESULT.setLine(tip4left); :} ;
+
+Statement 		::= (MatchedStmt) Matched:M1 {: RESULT=new MatchedStmt(M1); RESULT.setLine(M1left); :}
+		  			 |
+		   			(UnmatchedStmt) Unmatched:U1 {: RESULT=new UnmatchedStmt(U1); RESULT.setLine(U1left); :}
+		  			 ; 
+
+Unmatched ::= (UnmatchedIf) IF  LPAREN:oZIF Condition:C1 RPAREN:zZIF Statement:S2 {: RESULT=new UnmatchedIf(C1, S2); RESULT.setLine(C1left); :}
+		 	|
+		 	(UnmatchedIfElse) IF  LPAREN:oZIF Condition:C1 RPAREN:zZIF Matched:M2 PocinjeElse:P3 Matched:M4 {: RESULT=new UnmatchedIfElse(C1, M2, P3, M4); RESULT.setLine(C1left); :}
+		 	;
+		 	
+PreskociEl	::= (PreskociElse) Matched:M1 {: RESULT=new PreskociElse(M1); RESULT.setLine(M1left); :};
+
+Matched  		::= (DesignatorStatement) DesStatement:D1 {: RESULT=new DesignatorStatement(D1); RESULT.setLine(D1left); :}
+ 				 | 
+ 				 (IfNaredba) IF LPAREN:oZIF Condition:C1 RPAREN:zZIF Matched:M2 PocinjeElse:P3 Unmatched:U4 {: RESULT=new IfNaredba(C1, M2, P3, U4); RESULT.setLine(C1left); :}
+				 |
+				  (DoWhilePetlja) DoPocetno:D1 Statement:S2 WhilePocetno:W3 LPAREN:otvorenaZagradaWhile Condition:C4 RPAREN:ZatvorenaZagradaWhile SEMI {: RESULT=new DoWhilePetlja(D1, S2, W3, C4); RESULT.setLine(D1left); :}
+				 |
+				  (SwitchNaredba) SWITCH LPAREN:oZ6 Expr:IzrazSw RPAREN:zZ6 LBRACE:oSwitch ListaCaseNaredbi:L1 RBRACE:zSwitch {: RESULT=new SwitchNaredba(IzrazSw, L1); RESULT.setLine(IzrazSwleft); :}
+				 |
+				  (BreakNaredba) BREAK	SEMI:dvotackaBR {: RESULT=new BreakNaredba(); :}
+				 |
+				  (ContinueNaredba) CONTINUE SEMI:dvotackaCN {: RESULT=new ContinueNaredba(); :}
+				 |
+				  (ReturnNaredba) RETURN MozdaExpr:M1	 SEMI:dvotackaRET {: RESULT=new ReturnNaredba(M1); RESULT.setLine(M1left); :}
+				 |
+				  (ReadNaredba) READ LPAREN:oRead Designator:D1 RPAREN:zRead SEMI:dvotackaR {: RESULT=new ReadNaredba(D1); RESULT.setLine(D1left); :}
+				 | 
+				 (PrintNaredba) PRINT LPAREN:oPrint Expr:E1 MozdaNumConst:M2 RPAREN:zPrint SEMI:DvotackaP {: RESULT=new PrintNaredba(E1, M2); RESULT.setLine(E1left); :}
+				 | 
+				 (JosStatement) LBRACE:oStatement StatementLista:S1 RBRACE:zStatement {: RESULT=new JosStatement(S1); RESULT.setLine(S1left); :}
+				 ;
+
+TacanIfUslov 	::= (TacanIf) Matched:M1 {: RESULT=new TacanIf(M1); RESULT.setLine(M1left); :} ;
+
+
+PocinjeElse 	::= (ElseNaredba) ELSE {: RESULT=new ElseNaredba(); :};
+			 
+DoPocetno		::= (DetektovaoDo) DO {: RESULT=new DetektovaoDo(); :}; 	
+WhilePocetno 	::= (PocetnoWhile) WHILE {: RESULT=new PocetnoWhile(); :};	 
+
+ListaCaseNaredbi::= (PostojiListaCaseNaredbi) ListaCaseNaredbi:L1 CaseNaredba:C2 {: RESULT=new PostojiListaCaseNaredbi(L1, C2); RESULT.setLine(L1left); :} 
+					| 
+					(NePostojiListaCaseNaredbi) {: RESULT=new NePostojiListaCaseNaredbi(); :} /* epsilon */
+					;
+
+CaseNaredba 	::= (CaseNaredba) CASE NUMBER:konstanta DVOTACKA StatementLista:S1 {: RESULT=new CaseNaredba(konstanta, S1); RESULT.setLine(konstantaleft); :};
+
+StatementLista	::= (StatementListaPostoji) StatementLista:S1 Statement:Stm5 {: RESULT=new StatementListaPostoji(S1, Stm5); RESULT.setLine(S1left); :} 
+					| 
+					(StatementListaNePostoji) {: RESULT=new StatementListaNePostoji(); :} /* epsilon */
+					;
+					
+MozdaExpr 		::= (PostojiExpr) Expr:expr9 {: RESULT=new PostojiExpr(expr9); RESULT.setLine(expr9left); :} 
+					|
+					 (NePostojiExpr) {: RESULT=new NePostojiExpr(); :} /*epsilon*/
+					 ; 
+
+MozdaNumConst 	::= (PostojiNumerickaKonstanta) COMMA NUMBER:broj2 {: RESULT=new PostojiNumerickaKonstanta(broj2); RESULT.setLine(broj2left); :} 
+				  	|
+				   	(NePostojiNumerickaKonstanta) {: RESULT=new NePostojiNumerickaKonstanta(); :} /* epsilon */
+				  	;
+
+DesStatement 	::= (DodelaVrednostiDes) Designator:d Assignop:AP3 Expr:expr8 SEMI:Tz1 {: RESULT=new DodelaVrednostiDes(d, AP3, expr8); RESULT.setLine(dleft); :}
+					|
+					(UnarniPlusPlus) Designator:ime PLUSPLUS:pp SEMI {: RESULT=new UnarniPlusPlus(ime); RESULT.setLine(imeleft); :} 
+					|
+					(UnarniMinusMinus) Designator:imeMinus MINUSMINUS SEMI {: RESULT=new UnarniMinusMinus(imeMinus); RESULT.setLine(imeMinusleft); :}
+					|
+					(FunkcijaSaArgumentima) Designator:ime LPAREN:oOp ActPars:A1 RPAREN:zOp SEMI {: RESULT=new FunkcijaSaArgumentima(ime, A1); RESULT.setLine(imeleft); :}
+					| 
+					(FunkcijaBezArgumenata) Designator:imeFunkcije LPAREN:oOp RPAREN:zOp SEMI {: RESULT=new FunkcijaBezArgumenata(imeFunkcije); RESULT.setLine(imeFunkcijeleft); :}
+					|
+					error SEMI:l {: parser.report_error("Izvrsen oporavak od greske ; na liniji  " +lleft, null);  :} {: RESULT=new DesStatementDerived1(); :} 		;
+
+
+
+Opcije 			::=  (PovecajZaJedan) PLUSPLUS {: RESULT=new PovecajZaJedan(); :} 
+					|
+					 (SmanjiZaJedan) MINUSMINUS {: RESULT=new SmanjiZaJedan(); :}
+					;
+					
+/*				
+Opcije 			::=  (ActParsOpciono) LPAREN:oOp ActPars RPAREN:zOp 
+					|
+					 (BezActPar) LPAREN:oOp RPAREN:zOp 
+					|
+					 (PovecajZaJedan) PLUSPLUS 
+					|
+					 (SmanjiZaJedan) MINUSMINUS
+					;
+*/
+
+Designator 		::= (DesignatorNiz) ImeNiza:I1 LUGLASTA:ugDes Expr:expresDes DUGLASTA:zUglDes {: RESULT=new DesignatorNiz(I1, expresDes); RESULT.setLine(I1left); :} 
+					|
+					(ObicanBroj) IDENT:Des {: RESULT=new ObicanBroj(Des); RESULT.setLine(Desleft); :};
+					
+ImeNiza         ::= (ElementNiza) IDENT:Des {: RESULT=new ElementNiza(Des); RESULT.setLine(Desleft); :} ;
+
+ListaDes 		::= (ImaListeDes)   LUGLASTA:ugDes Expr:expresDes DUGLASTA:zUglDes {: RESULT=new ImaListeDes(expresDes); RESULT.setLine(expresDesleft); :} 
+					| 
+					(NemaListeDes) {: RESULT=new NemaListeDes(); :} /* epsilon */ 
+					;
+
+
+
+
+ActPars 		::= (ActParsic) ActParsPrvi:prvi ListaExpr:L1 {: RESULT=new ActParsic(prvi, L1); RESULT.setLine(prvileft); :};
+
+ActParsPrvi		::= (ActParsPrvi) Expr:prvi {: RESULT=new ActParsPrvi(prvi); RESULT.setLine(prvileft); :};
+
+ListaExpr 		::= (ListaExpresion) ListaExpr:L1 COMMA Expr:E2 {: RESULT=new ListaExpresion(L1, E2); RESULT.setLine(L1left); :} 
+					| 
+					(NemaExpresion) {: RESULT=new NemaExpresion(); :} /* ep */
+					;
+					
+
+Factor 			::= (FactorDesignator) Designator:des {: RESULT=new FactorDesignator(des); RESULT.setLine(desleft); :}
+					| 
+					(NumerickaKonstanta) NUMBER:broj {: RESULT=new NumerickaKonstanta(broj); RESULT.setLine(brojleft); :}  
+					| 
+					(KarakterKonst) CHARCONST:cC1 {: RESULT=new KarakterKonst(cC1); RESULT.setLine(cC1left); :} 
+					| 
+					(BoolKonstanta) BOOLCONST:bC1 {: RESULT=new BoolKonstanta(bC1); RESULT.setLine(bC1left); :} 
+					| 
+					(NovSimbol) NoviSimbol:N1 {: RESULT=new NovSimbol(N1); RESULT.setLine(N1left); :} 
+					| 
+					(NoviIzraz)  NoviIzraz2:N1 Expr:e4 RPAREN:zZ2 {: RESULT=new NoviIzraz(N1, e4); RESULT.setLine(N1left); :}
+					|
+					(Pozivi) Pomocni:P1 {: RESULT=new Pozivi(P1); RESULT.setLine(P1left); :}
+					;
+NoviIzraz2  ::= (NoviIzraz2) LPAREN:oZ2 {: RESULT=new NoviIzraz2(); :} ;
+
+Pomocni        	::= (PomocniPostoji) Designator:d2   MozdaActPars:M1 {: RESULT=new PomocniPostoji(d2, M1); RESULT.setLine(d2left); :}; 
+
+MozdaActPars 	::= (PostojiActPars) LPAREN:OZACP1 ActParsLista:A1 RPAREN:zZ1 {: RESULT=new PostojiActPars(A1); RESULT.setLine(A1left); :} ;
+					 
+ActParsLista 	::= (ActParsListaPostoji) ActPars:actP1 {: RESULT=new ActParsListaPostoji(actP1); RESULT.setLine(actP1left); :} 
+					|
+					 (SamoJedanClan) {: RESULT=new SamoJedanClan(); :} /* ep */
+					 ;
+					 
+NoviSimbol 		::= (NewSimbol) NEW:NoviS Type:tipNovogSimbola Izrazi:I1 {: RESULT=new NewSimbol(tipNovogSimbola, I1); RESULT.setLine(tipNovogSimbolaleft); :};
+
+Izrazi 			::= (PostojeNoviIzarzi)  LUGLASTA:oU1 Expr:expr3 DUGLASTA:zU1 {: RESULT=new PostojeNoviIzarzi(expr3); RESULT.setLine(expr3left); :} 
+					|
+					 (NemaIzraza) {: RESULT=new NemaIzraza(); :};//ovde moze samo jedan
+
+Term 			::= (Term) Factor:factor1 ListaMulFact:L1 {: RESULT=new Term(factor1, L1); RESULT.setLine(factor1left); :};
+
+ListaMulFact 	::= (PostojiListaMulFact) ListaMulFact:L1 MulFact:M2 {: RESULT=new PostojiListaMulFact(L1, M2); RESULT.setLine(L1left); :} 
+					|
+					 (NemaListaMulFact) {: RESULT=new NemaListaMulFact(); :} /* epsilon */
+					 ;
+MulFact 		::= (MulFact) Mulop:mulop1 Factor:factor2 {: RESULT=new MulFact(mulop1, factor2); RESULT.setLine(mulop1left); :};
+
+
+
+// Expr1 			::= (PostojiMinusUExpr2) MINUS Expr1:term2 ListaOperacija:ListaOpera | (ObicanExpre) Expr2 ;
+// Expr2 			::= (PostojiMinusUExpr) Term:t ListaOperacija:ListaOpera3;
+
+
+Expr 			::= (IzrazExpr) UslovTernarni:U1 PITANJE PrvaOpcijaTer:P2 DVOTACKA DrugaOpcijaTer:D3 {: RESULT=new IzrazExpr(U1, P2, D3); RESULT.setLine(U1left); :} 
+					| 
+					(ObicanExpr) Expr1:E1 {: RESULT=new ObicanExpr(E1); RESULT.setLine(E1left); :}; 
+					
+Expr2 			::= (PostojiMinusUExpr) Term:t {: RESULT=new PostojiMinusUExpr(t); RESULT.setLine(tleft); :};
+
+UslovTernarni ::= (TesrnarniUslov) Expr1:E1 {: RESULT=new TesrnarniUslov(E1); RESULT.setLine(E1left); :};
+PrvaOpcijaTer     ::= (TernarniPrvaOpcija) Expr1:E1 {: RESULT=new TernarniPrvaOpcija(E1); RESULT.setLine(E1left); :};
+DrugaOpcijaTer     ::= (TernarniDrugaOpcija) Expr1:E1 {: RESULT=new TernarniDrugaOpcija(E1); RESULT.setLine(E1left); :};
+
+
+Expr1 			::=  (IzrazExprassa) MozdaMinus:M1 Term:T2 ListaOperacija:ListaOpera3 {: RESULT=new IzrazExprassa(M1, T2, ListaOpera3); RESULT.setLine(M1left); :};  
+
+
+MozdaMinus 		::= (PostojiMinus) MINUS:Predznak {: RESULT=new PostojiMinus(); :} 
+					| 
+					(NemaMinusa) {: RESULT=new NemaMinusa(); :} /* epsilon */
+					;
+					
+ListaOperacija 	::= (ListaOperacijaPostoji) ListaOperacija:LisOp Operacija:Op3 {: RESULT=new ListaOperacijaPostoji(LisOp, Op3); RESULT.setLine(LisOpleft); :} 
+					| 
+					(NemaListeOperacija) {: RESULT=new NemaListeOperacija(); :} /* epsilon */
+					;
+					
+Operacija 		::= (JednaOperacija) Addop:A1 Term:term1 {: RESULT=new JednaOperacija(A1, term1); RESULT.setLine(A1left); :};
+
+Condition 		::= (Condition) CondTerm:CTERM ListaCondTerm:LCT8 {: RESULT=new Condition(CTERM, LCT8); RESULT.setLine(CTERMleft); :};
+
+ListaCondTerm	::= (PostojiListaCondTerm) ListaCondTerm:LCT1 LOGICKOILI:LOGI CondTerm:CT1 {: RESULT=new PostojiListaCondTerm(LCT1, CT1); RESULT.setLine(LCT1left); :}  
+					|
+					(NemaListaCondTerm) {: RESULT=new NemaListaCondTerm(); :} /* epsilon */
+					;
+					
+CondTerm 		::= (CCondTerm) CondFact:Cond ListaCondFact:LCF1 {: RESULT=new CCondTerm(Cond, LCF1); RESULT.setLine(Condleft); :};
+
+PrviCondFact	::= (PrviCond) CondFact:Cond {: RESULT=new PrviCond(Cond); RESULT.setLine(Condleft); :};
+
+ListaCondFact 	::= (PostojiListaCondFact) ListaCondFact:LCF4 LOGICKOI:LI1 CondFact:CF5 {: RESULT=new PostojiListaCondFact(LCF4, CF5); RESULT.setLine(LCF4left); :} 
+					|
+					 (NemaListaCondFact) {: RESULT=new NemaListaCondFact(); :} /*epsilon*/
+					 ;
+					 
+CondFact 		::= (CondFactd) ExprPomRel:E1 Expr:expr2 {: RESULT=new CondFactd(E1, expr2); RESULT.setLine(E1left); :} 
+					| 
+					(SecondOption) Expr:expr1 {: RESULT=new SecondOption(expr1); RESULT.setLine(expr1left); :}
+					;
+ExprPomRel 		::= (ExpoPrvi)  Expr:expr1 Relop:relOperacija {: RESULT=new ExpoPrvi(expr1, relOperacija); RESULT.setLine(expr1left); :};
+					
+MozdaRelOpExpr 	::= (MozdaRelOpExprPostoji) Relop:relOperacija Expr:expr2 {: RESULT=new MozdaRelOpExprPostoji(relOperacija, expr2); RESULT.setLine(relOperacijaleft); :} 
+					| 
+					(NemaRelOpExpr) {: RESULT=new NemaRelOpExpr(); :} /*epsilon */
+					;
+
+Assignop 		::=(Izjednacavanje) EQUAL {: RESULT=new Izjednacavanje(); :};
+Relop 			::= (Isto) JEDNAKOJEDNAKO {: RESULT=new Isto(); :}
+					| (Razlicito) RAZLICITO {: RESULT=new Razlicito(); :} 
+					| (AVise) VECE {: RESULT=new AVise(); :} 
+					| (AVeceJed) VECEJEDNAKO {: RESULT=new AVeceJed(); :} 
+					| (Malo) MANJE {: RESULT=new Malo(); :} 
+					| (MinusJedanko) MANJEJEDNAKO {: RESULT=new MinusJedanko(); :};
+Addop 			::= (Sabiranje) PLUS {: RESULT=new Sabiranje(); :} 
+					| (Oduzimanje) MINUS:operacijaManje {: RESULT=new Oduzimanje(); :};
+Mulop			::= (Mnozenje) ZVEZDICA {: RESULT=new Mnozenje(); :} 
+					| (Deljenje) PODELJENO {: RESULT=new Deljenje(); :} 
+					| (Ostatak) PROCENAT {: RESULT=new Ostatak(); :};
+
+
+
+
+
+

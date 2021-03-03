@@ -1,0 +1,407 @@
+
+package rs.ac.bg.etf.pp1;
+import java.util.*;
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	Logger log = Logger.getLogger(getClass());
+	Boolean error_det = false;
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    error_det = true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+
+:}
+
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, EQUAL, RETURN, PLUS, COMMA, PRINT, VOID;
+terminal Integer NUMBER;
+terminal String IDENT;
+terminal String CHARCONST;
+terminal  String BOOLCONST;
+terminal IF, ELSE, MANJE, LOGICKOI, EXTENDS, NEW, SWITCH, MINUS;
+terminal MINUSMINUS, PLUSPLUS, PROCENAT, LOGICKOILI, PODELJENO, CONST, VECEJEDNAKO,ZVEZDICA, TACKA, ENUM;
+terminal MANJEJEDNAKO, RAZLICITO, JEDNAKOJEDNAKO, BREAK, CASE, VECE, READ, PITANJE, DVOTACKA, WHILE, DUGLASTA, LUGLASTA, DO, CLASS;
+terminal  CONTINUE; 
+
+nonterminal DeclList,  Decl, VarDekl, ClassDekl, ErrorPom, DoPocetno, WhilePocetno;
+nonterminal Prosirena, ListaVarDekl, MozdaTelo, Telo;
+nonterminal MethodDeclList, MethodDecl, FormPars;
+nonterminal Statement;
+nonterminal ListaCaseNaredbi, CaseNaredba, StatementLista;
+nonterminal MozdaNumConst, Matched, Unmatched;
+nonterminal  ActPars, MozdaActPars, ActParsPrvi, ActParsLista, Izrazi, ListaExpr;
+nonterminal Assignop, Relop, Addop, Mulop;
+nonterminal  MulFact, NoviIzraz2, PrviArgument;
+nonterminal   Operacija, Operacija1 ;
+nonterminal CondFact, CondTerm, Condition, ListaCondTerm,  ListaCondFact,  MozdaRelOpExpr, DesStatement, PrviCondFact ;
+nonterminal PocinjeElse, PreskociEl, TacanIfUslov;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ImePrograma, Program, ConstDekl, JosParametara,JosPars, PovratnaVrednsot, ListaMulFact, ImeNiza, Parametar;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Konstante, PrvaConst, MozdaNiz, UslovTernarni, PrvaOpcijaTer, DrugaOpcijaTer, Pomocni;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct MozdaKonstante , Term, Factor, Expr2, Expr1, Expr, NoviSimbol, Opcije, MozdaExpr, ExprPomRel;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj NovaProm, Designator, ListaDes, MozdaMinus, ListaOperacija;
+
+
+
+precedence left ELSE;
+
+Program 		::= (Program) PROG ImePrograma:p DeclList LBRACE:oProg MethodDeclList RBRACE:zProg;
+
+ImePrograma 	::= (ImePrograma) IDENT:ImePrograma;
+
+DeclList 		::= (Declarations) DeclList Decl
+					|
+					(NoVarDecl) /* epsilon */
+					;
+
+Decl 			::= (VarDeklaracija) VarDekl 
+					| 
+					(ConstDeklaracija) ConstDekl 
+					| 
+					(ClassDeklaracija) ClassDekl 
+					;
+
+ConstDekl 		::= (ConstDekl)  CONST Type:TipKonstante PrvaConst:pc MozdaKonstante:MozKon SEMI;
+		
+PrvaConst       ::= (PrvaConst)  IDENT:imeKonstante EQUAL:Jednakost1 Konstante:Konstanta;
+					
+Konstante 		::=  (KonstantaNum) NUMBER:numerickaKonstanta
+					 | 
+					 (KonstantaCHAR) CHARCONST:slovnaKonstanta 
+					 | 
+					 (KonstantaBOOL) BOOLCONST:tacnoNetacno
+					 ;
+					 
+MozdaKonstante 	::= (MozdaKonstantica) MozdaKonstante:PostojiPrethodna COMMA IDENT:imeKonstNiz EQUAL:Jednakost2 Konstante:k 
+					| 
+					(NoKonstanta) /* epsilon */;
+
+VarDekl 		::= (VarDekla) Type:tipPromenljive IDENT:imePromenljive MozdaNiz:MozdaJeNiz JosParametara:ProveraZaParametre SEMI:zZP
+				    |
+				     error JosParametara:l SEMI:a {: parser.report_error("Izvrsen oporavak od greske -----  na liniji  "+( lleft < aleft?lleft:aleft) , null);  :} 
+				   ;
+				    
+MozdaNiz 		::= (JesteNiz) LUGLASTA:oUN DUGLASTA:zUN 
+					|
+					(NijeNiz) /* epsilon */
+					;
+					
+JosParametara 	::= (ImaJosParametara) JosParametara COMMA NovaProm:NovaPromenkjiva
+					| 
+					(ImaJosParametaraError) JosParametara COMMA ErrorPom
+					|
+					 (NemaViseParametara)   /* epsilon */
+					 ;
+
+ErrorPom 		::= error:e {: parser.report_error("Izvrsen oporavak od greske na liniji  "+eleft, null);  :} ;
+
+NovaProm        ::= (NovaPromenljivaPostoji) IDENT:ImeNovePromenljive MozdaNiz:MozdaJePonovoNiz;
+
+ClassDekl 		::= (ClassDecl) CLASS IDENT:imeKlase Prosirena LBRACE:oZK ListaVarDekl MozdaTelo  RBRACE:zZK;
+
+ListaVarDekl 	::= (JesteListaVarDekl) ListaVarDekl VarDekl  
+					| (NijeListaaa)/* epsilon */
+					;
+
+
+					
+Prosirena 		::= (JesteProsirena) EXTENDS Type:TipIzKlase
+ 					|
+ 					 (NijeProsirena) /* epsilon */;
+ 					 
+MozdaTelo 		::= (ImaTelo) LBRACE:otvorena1 Telo | (NemaTela) /* epsilon */ ;
+Telo 			::= (Telo) MethodDeclList RBRACE:zatvorena1;
+
+Type 			::= (Type) IDENT:typeName;
+		
+MethodDeclList 	::= (JesteListaMethodDec) MethodDeclList MethodDecl 
+					|
+					(NijeLista) /* epsilon */
+					;
+							
+MethodDecl 		::= (ZavrsenaFunkcija) PovratnaVrednsot:PovVrediIme  LPAREN:otvorenaM FormPars RPAREN:zatvorenaM ListaVarDekl LBRACE:oLVD StatementLista RBRACE:zLVD;
+
+PovratnaVrednsot::= (ImaPovratnuVrednost) Type:povratnaVrednostNijeVoid IDENT:ImeFunkcije
+					| 
+					(PovratnaVrVoid) VOID IDENT:ImeFje
+					;
+					
+FormPars 		::= (Parametard) PrviArgument JosPars 
+					| 
+					(NemaParaetaraFunkcije) /* epsilon */
+					;
+PrviArgument   ::= (PrviArgumentic) Type:tipProm IDENT:formalniParametar MozdaNiz:MaybeExpr;
+					
+JosPars 		::= (ImaJosPars) JosPars COMMA Parametar
+					| 
+					(NemaViseParam) /* epsilon*/
+					;
+
+Parametar  	::= (ParametarFje) Type:tip4 IDENT:KoZnaKo MozdaNiz:MN ;
+
+Statement 		::= (MatchedStmt) Matched
+		  			 |
+		   			(UnmatchedStmt) Unmatched
+		  			 ; 
+
+Unmatched ::= (UnmatchedIf) IF  LPAREN:oZIF Condition RPAREN:zZIF Statement
+		 	|
+		 	(UnmatchedIfElse) IF  LPAREN:oZIF Condition RPAREN:zZIF Matched PocinjeElse Matched
+		 	;
+		 	
+PreskociEl	::= (PreskociElse) Matched;
+
+Matched  		::= (DesignatorStatement) DesStatement
+ 				 | 
+ 				 (IfNaredba) IF LPAREN:oZIF Condition RPAREN:zZIF Matched PocinjeElse Unmatched
+				 |
+				  (DoWhilePetlja) DoPocetno Statement WhilePocetno LPAREN:otvorenaZagradaWhile Condition RPAREN:ZatvorenaZagradaWhile SEMI
+				 |
+				  (SwitchNaredba) SWITCH LPAREN:oZ6 Expr:IzrazSw RPAREN:zZ6 LBRACE:oSwitch ListaCaseNaredbi RBRACE:zSwitch
+				 |
+				  (BreakNaredba) BREAK	SEMI:dvotackaBR
+				 |
+				  (ContinueNaredba) CONTINUE SEMI:dvotackaCN
+				 |
+				  (ReturnNaredba) RETURN MozdaExpr	 SEMI:dvotackaRET
+				 |
+				  (ReadNaredba) READ LPAREN:oRead Designator RPAREN:zRead SEMI:dvotackaR
+				 | 
+				 (PrintNaredba) PRINT LPAREN:oPrint Expr MozdaNumConst RPAREN:zPrint SEMI:DvotackaP
+				 | 
+				 (JosStatement) LBRACE:oStatement StatementLista RBRACE:zStatement
+				 ;
+
+TacanIfUslov 	::= (TacanIf) Matched ;
+
+
+PocinjeElse 	::= (ElseNaredba) ELSE;
+			 
+DoPocetno		::= (DetektovaoDo) DO; 	
+WhilePocetno 	::= (PocetnoWhile) WHILE;	 
+
+ListaCaseNaredbi::= (PostojiListaCaseNaredbi) ListaCaseNaredbi CaseNaredba 
+					| 
+					(NePostojiListaCaseNaredbi) /* epsilon */
+					;
+
+CaseNaredba 	::= (CaseNaredba) CASE NUMBER:konstanta DVOTACKA StatementLista;
+
+StatementLista	::= (StatementListaPostoji) StatementLista Statement:Stm5 
+					| 
+					(StatementListaNePostoji) /* epsilon */
+					;
+					
+MozdaExpr 		::= (PostojiExpr) Expr:expr9 
+					|
+					 (NePostojiExpr) /*epsilon*/
+					 ; 
+
+MozdaNumConst 	::= (PostojiNumerickaKonstanta) COMMA NUMBER:broj2 
+				  	|
+				   	(NePostojiNumerickaKonstanta) /* epsilon */
+				  	;
+
+DesStatement 	::= (DodelaVrednostiDes) Designator:d Assignop:AP3 Expr:expr8 SEMI:Tz1
+					|
+					(UnarniPlusPlus) Designator:ime PLUSPLUS:pp SEMI 
+					|
+					(UnarniMinusMinus) Designator:imeMinus MINUSMINUS SEMI
+					|
+					(FunkcijaSaArgumentima) Designator:ime LPAREN:oOp ActPars RPAREN:zOp SEMI
+					| 
+					(FunkcijaBezArgumenata) Designator:imeFunkcije LPAREN:oOp RPAREN:zOp SEMI
+					|
+					error SEMI:l {: parser.report_error("Izvrsen oporavak od greske ; na liniji  " +lleft, null);  :} 		;
+
+
+
+Opcije 			::=  (PovecajZaJedan) PLUSPLUS 
+					|
+					 (SmanjiZaJedan) MINUSMINUS
+					;
+					
+/*				
+Opcije 			::=  (ActParsOpciono) LPAREN:oOp ActPars RPAREN:zOp 
+					|
+					 (BezActPar) LPAREN:oOp RPAREN:zOp 
+					|
+					 (PovecajZaJedan) PLUSPLUS 
+					|
+					 (SmanjiZaJedan) MINUSMINUS
+					;
+*/
+
+Designator 		::= (DesignatorNiz) ImeNiza LUGLASTA:ugDes Expr:expresDes DUGLASTA:zUglDes 
+					|
+					(ObicanBroj) IDENT:Des;
+					
+ImeNiza         ::= (ElementNiza) IDENT:Des ;
+
+ListaDes 		::= (ImaListeDes)   LUGLASTA:ugDes Expr:expresDes DUGLASTA:zUglDes 
+					| 
+					(NemaListeDes) /* epsilon */ 
+					;
+
+
+
+
+ActPars 		::= (ActParsic) ActParsPrvi:prvi ListaExpr;
+
+ActParsPrvi		::= (ActParsPrvi) Expr:prvi;
+
+ListaExpr 		::= (ListaExpresion) ListaExpr COMMA Expr 
+					| 
+					(NemaExpresion) /* ep */
+					;
+					
+
+Factor 			::= (FactorDesignator) Designator:des
+					| 
+					(NumerickaKonstanta) NUMBER:broj  
+					| 
+					(KarakterKonst) CHARCONST:cC1 
+					| 
+					(BoolKonstanta) BOOLCONST:bC1 
+					| 
+					(NovSimbol) NoviSimbol 
+					| 
+					(NoviIzraz)  NoviIzraz2 Expr:e4 RPAREN:zZ2
+					|
+					(Pozivi) Pomocni
+					;
+NoviIzraz2  ::= (NoviIzraz2) LPAREN:oZ2 ;
+
+Pomocni        	::= (PomocniPostoji) Designator:d2   MozdaActPars; 
+
+MozdaActPars 	::= (PostojiActPars) LPAREN:OZACP1 ActParsLista RPAREN:zZ1 ;
+					 
+ActParsLista 	::= (ActParsListaPostoji) ActPars:actP1 
+					|
+					 (SamoJedanClan) /* ep */
+					 ;
+					 
+NoviSimbol 		::= (NewSimbol) NEW:NoviS Type:tipNovogSimbola Izrazi;
+
+Izrazi 			::= (PostojeNoviIzarzi)  LUGLASTA:oU1 Expr:expr3 DUGLASTA:zU1 
+					|
+					 (NemaIzraza);//ovde moze samo jedan
+
+Term 			::= (Term) Factor:factor1 ListaMulFact;
+
+ListaMulFact 	::= (PostojiListaMulFact) ListaMulFact MulFact 
+					|
+					 (NemaListaMulFact) /* epsilon */
+					 ;
+MulFact 		::= (MulFact) Mulop:mulop1 Factor:factor2;
+
+
+
+// Expr1 			::= (PostojiMinusUExpr2) MINUS Expr1:term2 ListaOperacija:ListaOpera | (ObicanExpre) Expr2 ;
+// Expr2 			::= (PostojiMinusUExpr) Term:t ListaOperacija:ListaOpera3;
+
+
+Expr 			::= (IzrazExpr) UslovTernarni PITANJE PrvaOpcijaTer DVOTACKA DrugaOpcijaTer 
+					| 
+					(ObicanExpr) Expr1; 
+					
+Expr2 			::= (PostojiMinusUExpr) Term:t;
+
+UslovTernarni ::= (TesrnarniUslov) Expr1;
+PrvaOpcijaTer     ::= (TernarniPrvaOpcija) Expr1;
+DrugaOpcijaTer     ::= (TernarniDrugaOpcija) Expr1;
+
+
+Expr1 			::=  (IzrazExprassa) MozdaMinus Term ListaOperacija:ListaOpera3;  
+
+
+MozdaMinus 		::= (PostojiMinus) MINUS:Predznak 
+					| 
+					(NemaMinusa) /* epsilon */
+					;
+					
+ListaOperacija 	::= (ListaOperacijaPostoji) ListaOperacija:LisOp Operacija:Op3 
+					| 
+					(NemaListeOperacija) /* epsilon */
+					;
+					
+Operacija 		::= (JednaOperacija) Addop Term:term1;
+
+Condition 		::= (Condition) CondTerm:CTERM ListaCondTerm:LCT8;
+
+ListaCondTerm	::= (PostojiListaCondTerm) ListaCondTerm:LCT1 LOGICKOILI:LOGI CondTerm:CT1  
+					|
+					(NemaListaCondTerm) /* epsilon */
+					;
+					
+CondTerm 		::= (CCondTerm) CondFact:Cond ListaCondFact:LCF1;
+
+PrviCondFact	::= (PrviCond) CondFact:Cond;
+
+ListaCondFact 	::= (PostojiListaCondFact) ListaCondFact:LCF4 LOGICKOI:LI1 CondFact:CF5 
+					|
+					 (NemaListaCondFact) /*epsilon*/
+					 ;
+					 
+CondFact 		::= (CondFactd) ExprPomRel Expr:expr2 
+					| 
+					(SecondOption) Expr:expr1
+					;
+ExprPomRel 		::= (ExpoPrvi)  Expr:expr1 Relop:relOperacija;
+					
+MozdaRelOpExpr 	::= (MozdaRelOpExprPostoji) Relop:relOperacija Expr:expr2 
+					| 
+					(NemaRelOpExpr) /*epsilon */
+					;
+
+Assignop 		::=(Izjednacavanje) EQUAL;
+Relop 			::= (Isto) JEDNAKOJEDNAKO
+					| (Razlicito) RAZLICITO 
+					| (AVise) VECE 
+					| (AVeceJed) VECEJEDNAKO 
+					| (Malo) MANJE 
+					| (MinusJedanko) MANJEJEDNAKO;
+Addop 			::= (Sabiranje) PLUS 
+					| (Oduzimanje) MINUS:operacijaManje;
+Mulop			::= (Mnozenje) ZVEZDICA 
+					| (Deljenje) PODELJENO 
+					| (Ostatak) PROCENAT;
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+package rs.ac.bg.etf.pp1;
+
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.ac.bg.etf.pp1.ast.VisitorAdaptor;
+
+public class CounterVisitor extends VisitorAdaptor {
+
+	protected int count;
+	
+	public int getCount(){
+		return count;
+	}
+	
+	public static class FormParamCounter extends CounterVisitor{
+	
+		public void visit(Parametard formParamDecl){
+			count++;
+		}
+		public void visit(ImaJosPars formParamDecl){
+			count++;
+		}
+		
+	}
+	
+	public static class VarCounter extends CounterVisitor{
+		
+		public void visit(VarDekla varDecl){
+			count++;
+		}
+		public void visit(ListaVarDekl varDecl){
+			count++;
+		}
+	}
+}

@@ -1,0 +1,116 @@
+program testic
+
+const int jedan = 1;
+
+int i, fakt;
+bool ibool;
+
+int niz[];
+int niz2[];
+
+{
+
+	char slovo(char a, int pom)
+	{
+		do
+		{
+			pom++;
+			if(a == 'c' && pom < 10) continue;
+			else if(a == 'b') break;
+			else if( a == 'a') pom++;
+			
+			print(pom); print('.');
+			do
+			{
+				pom++;
+				if(pom == 12 || pom ==4 && a == 'a' || pom == 5) break;
+				
+				print('*');
+				
+			}
+			while(pom < 5);
+			
+				print('<');print(a); print('>');
+		
+		}while(pom < 15 || pom == 16);
+		return chr(pom + ord(a)) ;
+	}
+
+	int zamena(int niz[], int i, int b) 
+		int pom; int pom2; 
+		
+	{
+		if(i > len(niz) || b > len(niz) )
+		{
+		 	print('G'); return -1;
+		}
+		else
+		{
+				pom2 = niz[b];
+				pom = niz[i];
+				niz[b] = pom;
+				niz[i] = pom2;
+				return (pom ? pom2 + 50: pom2 + 40);
+		} 
+	
+	}
+	
+	int faktorijel(int n)
+	int pom; int pom2;
+	{
+		if(n > 0) pom = faktorijel(n - 1);
+		if(n != 0 ) pom2 = pom * n;
+		else if (n == 0) pom2 = 1;
+		print(n,3);
+		return pom2;
+		
+		
+	}	
+	
+	void main()
+	{	
+		
+		niz = new int[8];
+		niz2 = new int[8];
+		niz[0] = jedan;
+		niz[1] = 2;
+		niz[1]++;
+		ibool = true;
+		niz2 = niz;
+		if(niz[0] == niz2[0]) print('t');
+
+		print(zamena(niz,0,1));
+		print(niz[0]);
+		print(niz[1]);
+		
+		//print(zamena(niz,0,9),10);
+		if(zamena(niz,0,9) + 1 != 0)
+		{
+			print(':'); print('(');
+		}
+		else if(1 == 5) print(':');
+		else if(1 == 1) 
+		{
+			print(':',10); print(')');
+		}
+		print(eol);
+		i = 10;
+		fakt = faktorijel(i);
+		print(eol);
+		print(i,3);
+		print('!',3);
+		print('=',3);
+		print(fakt,10);
+		
+		print(eol);
+		
+		print(slovo('a',0));
+		
+
+		
+		
+	
+	return;
+	}
+}
+

@@ -1,0 +1,3741 @@
+INFO  17:25:54,608 - Compiling source file: D:\andjela\IV\PP1\w11\DomaciZadatakB\DomaciZadatakB\test\test301.mj
+INFO  17:25:54,644 - #2 program
+INFO  17:25:54,644 - #15 testic
+INFO  17:25:54,644 - #31 const
+INFO  17:25:54,644 - #15 int
+INFO  17:25:54,644 - #15 jedan
+INFO  17:25:54,644 - #8 =
+INFO  17:25:54,644 - #14 1
+INFO  17:25:54,644 - #5 ;
+INFO  17:25:54,644 - #15 int
+INFO  17:25:54,644 - #15 i
+INFO  17:25:54,644 - #11 ,
+INFO  17:25:54,644 - #15 fakt
+INFO  17:25:54,644 - #5 ;
+INFO  17:25:54,644 - #15 bool
+INFO  17:25:54,644 - #15 ibool
+INFO  17:25:54,644 - #5 ;
+INFO  17:25:54,644 - #15 int
+INFO  17:25:54,644 - #15 niz
+INFO  17:25:54,644 - #47 [
+INFO  17:25:54,644 - #46 ]
+INFO  17:25:54,644 - #5 ;
+INFO  17:25:54,644 - #15 int
+INFO  17:25:54,644 - #15 niz2
+INFO  17:25:54,644 - #47 [
+INFO  17:25:54,644 - #46 ]
+INFO  17:25:54,644 - #5 ;
+INFO  17:25:54,644 - #3 {
+INFO  17:25:54,644 - #15 char
+INFO  17:25:54,644 - #15 slovo
+INFO  17:25:54,644 - #6 (
+INFO  17:25:54,644 - #15 char
+INFO  17:25:54,644 - #15 a
+INFO  17:25:54,644 - #11 ,
+INFO  17:25:54,644 - #15 int
+INFO  17:25:54,644 - #15 pom
+INFO  17:25:54,644 - #7 )
+INFO  17:25:54,644 - #3 {
+INFO  17:25:54,644 - #48 do
+INFO  17:25:54,659 - #3 {
+INFO  17:25:54,659 - #15 pom
+INFO  17:25:54,659 - #27 ++
+INFO  17:25:54,659 - #5 ;
+INFO  17:25:54,659 - #18 if
+INFO  17:25:54,659 - #6 (
+INFO  17:25:54,659 - #15 a
+INFO  17:25:54,659 - #38 ==
+INFO  17:25:54,659 - #16 'c'
+INFO  17:25:54,659 - #21 &&
+INFO  17:25:54,659 - #15 pom
+INFO  17:25:54,659 - #20 <
+INFO  17:25:54,659 - #14 10
+INFO  17:25:54,659 - #7 )
+INFO  17:25:54,659 - #50 continue
+INFO  17:25:54,659 - #5 ;
+INFO  17:25:54,659 - #19 else
+INFO  17:25:54,659 - #18 if
+INFO  17:25:54,659 - #6 (
+INFO  17:25:54,659 - #15 a
+INFO  17:25:54,659 - #38 ==
+INFO  17:25:54,659 - #16 'b'
+INFO  17:25:54,659 - #7 )
+INFO  17:25:54,659 - #39 break
+INFO  17:25:54,659 - #5 ;
+INFO  17:25:54,659 - #19 else
+INFO  17:25:54,659 - #18 if
+INFO  17:25:54,659 - #6 (
+INFO  17:25:54,659 - #15 a
+INFO  17:25:54,659 - #38 ==
+INFO  17:25:54,659 - #16 'a'
+INFO  17:25:54,659 - #7 )
+INFO  17:25:54,659 - #15 pom
+INFO  17:25:54,659 - #27 ++
+INFO  17:25:54,659 - #5 ;
+INFO  17:25:54,659 - #12 print
+INFO  17:25:54,659 - #6 (
+INFO  17:25:54,659 - #15 pom
+INFO  17:25:54,659 - #7 )
+INFO  17:25:54,659 - #5 ;
+INFO  17:25:54,659 - #12 print
+INFO  17:25:54,659 - #6 (
+INFO  17:25:54,659 - #16 '.'
+INFO  17:25:54,659 - #7 )
+INFO  17:25:54,659 - #5 ;
+INFO  17:25:54,659 - #48 do
+INFO  17:25:54,659 - #3 {
+INFO  17:25:54,659 - #15 pom
+INFO  17:25:54,659 - #27 ++
+INFO  17:25:54,659 - #5 ;
+INFO  17:25:54,659 - #18 if
+INFO  17:25:54,659 - #6 (
+INFO  17:25:54,659 - #15 pom
+INFO  17:25:54,659 - #38 ==
+INFO  17:25:54,659 - #14 12
+INFO  17:25:54,659 - #29 ||
+INFO  17:25:54,659 - #15 pom
+INFO  17:25:54,659 - #38 ==
+INFO  17:25:54,659 - #14 4
+INFO  17:25:54,659 - #21 &&
+INFO  17:25:54,659 - #15 a
+INFO  17:25:54,659 - #38 ==
+INFO  17:25:54,659 - #16 'a'
+INFO  17:25:54,659 - #29 ||
+INFO  17:25:54,659 - #15 pom
+INFO  17:25:54,659 - #38 ==
+INFO  17:25:54,659 - #14 5
+INFO  17:25:54,659 - #7 )
+INFO  17:25:54,659 - #39 break
+INFO  17:25:54,659 - #5 ;
+INFO  17:25:54,659 - #12 print
+INFO  17:25:54,659 - #6 (
+INFO  17:25:54,659 - #16 '*'
+INFO  17:25:54,659 - #7 )
+INFO  17:25:54,659 - #5 ;
+INFO  17:25:54,659 - #4 }
+INFO  17:25:54,659 - #45 while
+INFO  17:25:54,659 - #6 (
+INFO  17:25:54,659 - #15 pom
+INFO  17:25:54,659 - #20 <
+INFO  17:25:54,659 - #14 5
+INFO  17:25:54,659 - #7 )
+INFO  17:25:54,659 - #5 ;
+INFO  17:25:54,659 - #12 print
+INFO  17:25:54,659 - #6 (
+INFO  17:25:54,659 - #16 '<'
+INFO  17:25:54,659 - #7 )
+INFO  17:25:54,659 - #5 ;
+INFO  17:25:54,659 - #12 print
+INFO  17:25:54,659 - #6 (
+INFO  17:25:54,659 - #15 a
+INFO  17:25:54,659 - #7 )
+INFO  17:25:54,659 - #5 ;
+INFO  17:25:54,659 - #12 print
+INFO  17:25:54,659 - #6 (
+INFO  17:25:54,659 - #16 '>'
+INFO  17:25:54,659 - #7 )
+INFO  17:25:54,659 - #5 ;
+INFO  17:25:54,659 - #4 }
+INFO  17:25:54,659 - #45 while
+INFO  17:25:54,659 - #6 (
+INFO  17:25:54,659 - #15 pom
+INFO  17:25:54,659 - #20 <
+INFO  17:25:54,659 - #14 15
+INFO  17:25:54,659 - #29 ||
+INFO  17:25:54,659 - #15 pom
+INFO  17:25:54,659 - #38 ==
+INFO  17:25:54,659 - #14 16
+INFO  17:25:54,659 - #7 )
+INFO  17:25:54,659 - #5 ;
+INFO  17:25:54,659 - #9 return
+INFO  17:25:54,659 - #15 chr
+INFO  17:25:54,659 - #6 (
+INFO  17:25:54,659 - #15 pom
+INFO  17:25:54,659 - #10 +
+INFO  17:25:54,659 - #15 ord
+INFO  17:25:54,659 - #6 (
+INFO  17:25:54,659 - #15 a
+INFO  17:25:54,659 - #7 )
+INFO  17:25:54,675 - #7 )
+INFO  17:25:54,675 - #5 ;
+INFO  17:25:54,675 - #4 }
+INFO  17:25:54,675 - #15 int
+INFO  17:25:54,675 - #15 zamena
+INFO  17:25:54,675 - #6 (
+INFO  17:25:54,675 - #15 int
+INFO  17:25:54,675 - #15 niz
+INFO  17:25:54,675 - #47 [
+INFO  17:25:54,675 - #46 ]
+INFO  17:25:54,675 - #11 ,
+INFO  17:25:54,675 - #15 int
+INFO  17:25:54,675 - #15 i
+INFO  17:25:54,675 - #11 ,
+INFO  17:25:54,675 - #15 int
+INFO  17:25:54,675 - #15 b
+INFO  17:25:54,675 - #7 )
+INFO  17:25:54,675 - #15 int
+INFO  17:25:54,675 - #15 pom
+INFO  17:25:54,675 - #5 ;
+INFO  17:25:54,675 - #15 int
+INFO  17:25:54,675 - #15 pom2
+INFO  17:25:54,675 - #5 ;
+INFO  17:25:54,675 - #3 {
+INFO  17:25:54,675 - #18 if
+INFO  17:25:54,675 - #6 (
+INFO  17:25:54,675 - #15 i
+INFO  17:25:54,675 - #41 >
+INFO  17:25:54,675 - #15 len
+INFO  17:25:54,675 - #6 (
+INFO  17:25:54,675 - #15 niz
+INFO  17:25:54,675 - #7 )
+INFO  17:25:54,675 - #29 ||
+INFO  17:25:54,675 - #15 b
+INFO  17:25:54,675 - #41 >
+INFO  17:25:54,675 - #15 len
+INFO  17:25:54,675 - #6 (
+INFO  17:25:54,675 - #15 niz
+INFO  17:25:54,675 - #7 )
+INFO  17:25:54,675 - #7 )
+INFO  17:25:54,675 - #3 {
+INFO  17:25:54,675 - #12 print
+INFO  17:25:54,675 - #6 (
+INFO  17:25:54,675 - #16 'G'
+INFO  17:25:54,675 - #7 )
+INFO  17:25:54,675 - #5 ;
+INFO  17:25:54,675 - #9 return
+INFO  17:25:54,675 - #25 -
+INFO  17:25:54,675 - #14 1
+INFO  17:25:54,675 - #5 ;
+INFO  17:25:54,675 - #4 }
+INFO  17:25:54,675 - #19 else
+INFO  17:25:54,675 - #3 {
+INFO  17:25:54,675 - #15 pom2
+INFO  17:25:54,675 - #8 =
+INFO  17:25:54,675 - #15 niz
+INFO  17:25:54,675 - #47 [
+INFO  17:25:54,675 - #15 b
+INFO  17:25:54,675 - #46 ]
+INFO  17:25:54,675 - #5 ;
+INFO  17:25:54,675 - #15 pom
+INFO  17:25:54,675 - #8 =
+INFO  17:25:54,675 - #15 niz
+INFO  17:25:54,675 - #47 [
+INFO  17:25:54,675 - #15 i
+INFO  17:25:54,675 - #46 ]
+INFO  17:25:54,675 - #5 ;
+INFO  17:25:54,675 - #15 niz
+INFO  17:25:54,675 - #47 [
+INFO  17:25:54,675 - #15 b
+INFO  17:25:54,675 - #46 ]
+INFO  17:25:54,675 - #8 =
+INFO  17:25:54,675 - #15 pom
+INFO  17:25:54,675 - #5 ;
+INFO  17:25:54,675 - #15 niz
+INFO  17:25:54,675 - #47 [
+INFO  17:25:54,675 - #15 i
+INFO  17:25:54,675 - #46 ]
+INFO  17:25:54,675 - #8 =
+INFO  17:25:54,675 - #15 pom2
+INFO  17:25:54,675 - #5 ;
+INFO  17:25:54,675 - #9 return
+INFO  17:25:54,675 - #6 (
+INFO  17:25:54,675 - #15 pom
+INFO  17:25:54,675 - #43 ?
+INFO  17:25:54,675 - #15 pom2
+INFO  17:25:54,675 - #10 +
+INFO  17:25:54,675 - #14 50
+INFO  17:25:54,675 - #44 :
+INFO  17:25:54,675 - #15 pom2
+INFO  17:25:54,675 - #10 +
+INFO  17:25:54,675 - #14 40
+INFO  17:25:54,675 - #7 )
+INFO  17:25:54,675 - #5 ;
+INFO  17:25:54,675 - #4 }
+INFO  17:25:54,675 - #4 }
+INFO  17:25:54,675 - #15 int
+INFO  17:25:54,675 - #15 faktorijel
+INFO  17:25:54,675 - #6 (
+INFO  17:25:54,675 - #15 int
+INFO  17:25:54,675 - #15 n
+INFO  17:25:54,675 - #7 )
+INFO  17:25:54,675 - #15 int
+INFO  17:25:54,675 - #15 pom
+INFO  17:25:54,675 - #5 ;
+INFO  17:25:54,675 - #15 int
+INFO  17:25:54,675 - #15 pom2
+INFO  17:25:54,675 - #5 ;
+INFO  17:25:54,675 - #3 {
+INFO  17:25:54,675 - #18 if
+INFO  17:25:54,675 - #6 (
+INFO  17:25:54,675 - #15 n
+INFO  17:25:54,675 - #41 >
+INFO  17:25:54,675 - #14 0
+INFO  17:25:54,675 - #7 )
+INFO  17:25:54,675 - #15 pom
+INFO  17:25:54,675 - #8 =
+INFO  17:25:54,675 - #15 faktorijel
+INFO  17:25:54,675 - #6 (
+INFO  17:25:54,675 - #15 n
+INFO  17:25:54,675 - #25 -
+INFO  17:25:54,675 - #14 1
+INFO  17:25:54,675 - #7 )
+INFO  17:25:54,675 - #5 ;
+INFO  17:25:54,675 - #18 if
+INFO  17:25:54,675 - #6 (
+INFO  17:25:54,675 - #15 n
+INFO  17:25:54,675 - #37 !=
+INFO  17:25:54,675 - #14 0
+INFO  17:25:54,675 - #7 )
+INFO  17:25:54,675 - #15 pom2
+INFO  17:25:54,675 - #8 =
+INFO  17:25:54,675 - #15 pom
+INFO  17:25:54,675 - #33 *
+INFO  17:25:54,675 - #15 n
+INFO  17:25:54,675 - #5 ;
+INFO  17:25:54,675 - #19 else
+INFO  17:25:54,675 - #18 if
+INFO  17:25:54,675 - #6 (
+INFO  17:25:54,675 - #15 n
+INFO  17:25:54,675 - #38 ==
+INFO  17:25:54,675 - #14 0
+INFO  17:25:54,675 - #7 )
+INFO  17:25:54,675 - #15 pom2
+INFO  17:25:54,675 - #8 =
+INFO  17:25:54,675 - #14 1
+INFO  17:25:54,675 - #5 ;
+INFO  17:25:54,675 - #12 print
+INFO  17:25:54,675 - #6 (
+INFO  17:25:54,675 - #15 n
+INFO  17:25:54,675 - #11 ,
+INFO  17:25:54,675 - #14 3
+INFO  17:25:54,675 - #7 )
+INFO  17:25:54,675 - #5 ;
+INFO  17:25:54,675 - #9 return
+INFO  17:25:54,675 - #15 pom2
+INFO  17:25:54,675 - #5 ;
+INFO  17:25:54,675 - #4 }
+INFO  17:25:54,675 - #13 void
+INFO  17:25:54,675 - #15 main
+INFO  17:25:54,675 - #6 (
+INFO  17:25:54,675 - #7 )
+INFO  17:25:54,675 - #3 {
+INFO  17:25:54,675 - #15 niz
+INFO  17:25:54,675 - #8 =
+INFO  17:25:54,675 - #23 new
+INFO  17:25:54,675 - #15 int
+INFO  17:25:54,675 - #47 [
+INFO  17:25:54,675 - #14 8
+INFO  17:25:54,675 - #46 ]
+INFO  17:25:54,675 - #5 ;
+INFO  17:25:54,691 - #15 niz2
+INFO  17:25:54,691 - #8 =
+INFO  17:25:54,691 - #23 new
+INFO  17:25:54,691 - #15 int
+INFO  17:25:54,691 - #47 [
+INFO  17:25:54,691 - #14 8
+INFO  17:25:54,691 - #46 ]
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #15 niz
+INFO  17:25:54,691 - #47 [
+INFO  17:25:54,691 - #14 0
+INFO  17:25:54,691 - #46 ]
+INFO  17:25:54,691 - #8 =
+INFO  17:25:54,691 - #15 jedan
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #15 niz
+INFO  17:25:54,691 - #47 [
+INFO  17:25:54,691 - #14 1
+INFO  17:25:54,691 - #46 ]
+INFO  17:25:54,691 - #8 =
+INFO  17:25:54,691 - #14 2
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #15 niz
+INFO  17:25:54,691 - #47 [
+INFO  17:25:54,691 - #14 1
+INFO  17:25:54,691 - #46 ]
+INFO  17:25:54,691 - #27 ++
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #15 ibool
+INFO  17:25:54,691 - #8 =
+INFO  17:25:54,691 - #17 true
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #15 niz2
+INFO  17:25:54,691 - #8 =
+INFO  17:25:54,691 - #15 niz
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #18 if
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #15 niz
+INFO  17:25:54,691 - #47 [
+INFO  17:25:54,691 - #14 0
+INFO  17:25:54,691 - #46 ]
+INFO  17:25:54,691 - #38 ==
+INFO  17:25:54,691 - #15 niz2
+INFO  17:25:54,691 - #47 [
+INFO  17:25:54,691 - #14 0
+INFO  17:25:54,691 - #46 ]
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #12 print
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #16 't'
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #12 print
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #15 zamena
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #15 niz
+INFO  17:25:54,691 - #11 ,
+INFO  17:25:54,691 - #14 0
+INFO  17:25:54,691 - #11 ,
+INFO  17:25:54,691 - #14 1
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #12 print
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #15 niz
+INFO  17:25:54,691 - #47 [
+INFO  17:25:54,691 - #14 0
+INFO  17:25:54,691 - #46 ]
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #12 print
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #15 niz
+INFO  17:25:54,691 - #47 [
+INFO  17:25:54,691 - #14 1
+INFO  17:25:54,691 - #46 ]
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #18 if
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #15 zamena
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #15 niz
+INFO  17:25:54,691 - #11 ,
+INFO  17:25:54,691 - #14 0
+INFO  17:25:54,691 - #11 ,
+INFO  17:25:54,691 - #14 9
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #10 +
+INFO  17:25:54,691 - #14 1
+INFO  17:25:54,691 - #37 !=
+INFO  17:25:54,691 - #14 0
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #3 {
+INFO  17:25:54,691 - #12 print
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #16 ':'
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #12 print
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #16 '('
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #4 }
+INFO  17:25:54,691 - #19 else
+INFO  17:25:54,691 - #18 if
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #14 1
+INFO  17:25:54,691 - #38 ==
+INFO  17:25:54,691 - #14 5
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #12 print
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #16 ':'
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #19 else
+INFO  17:25:54,691 - #18 if
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #14 1
+INFO  17:25:54,691 - #38 ==
+INFO  17:25:54,691 - #14 1
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #3 {
+INFO  17:25:54,691 - #12 print
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #16 ':'
+INFO  17:25:54,691 - #11 ,
+INFO  17:25:54,691 - #14 10
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #12 print
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #16 ')'
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #4 }
+INFO  17:25:54,691 - #12 print
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #15 eol
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #15 i
+INFO  17:25:54,691 - #8 =
+INFO  17:25:54,691 - #14 10
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #15 fakt
+INFO  17:25:54,691 - #8 =
+INFO  17:25:54,691 - #15 faktorijel
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #15 i
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #12 print
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #15 eol
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #12 print
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #15 i
+INFO  17:25:54,691 - #11 ,
+INFO  17:25:54,691 - #14 3
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #12 print
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #16 '!'
+INFO  17:25:54,691 - #11 ,
+INFO  17:25:54,691 - #14 3
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #12 print
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #16 '='
+INFO  17:25:54,691 - #11 ,
+INFO  17:25:54,691 - #14 3
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #12 print
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #15 fakt
+INFO  17:25:54,691 - #11 ,
+INFO  17:25:54,691 - #14 10
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #12 print
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #15 eol
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #12 print
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #15 slovo
+INFO  17:25:54,691 - #6 (
+INFO  17:25:54,691 - #16 'a'
+INFO  17:25:54,691 - #11 ,
+INFO  17:25:54,691 - #14 0
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #7 )
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #9 return
+INFO  17:25:54,691 - #5 ;
+INFO  17:25:54,691 - #4 }
+INFO  17:25:54,691 - #4 }
+INFO  17:25:54,691 - ========================================
+INFO  17:25:54,706 - Program(
+  ImePrograma(
+   testic
+  ) [ImePrograma]
+  Declarations(
+    Declarations(
+      Declarations(
+        Declarations(
+          Declarations(
+            NoVarDecl(
+            ) [NoVarDecl]
+            ConstDeklaracija(
+              ConstDekl(
+                Type(
+                 int
+                ) [Type]
+                PrvaConst(
+                 jedan
+                  KonstantaNum(
+                   1
+                  ) [KonstantaNum]
+                ) [PrvaConst]
+                NoKonstanta(
+                ) [NoKonstanta]
+              ) [ConstDekl]
+            ) [ConstDeklaracija]
+          ) [Declarations]
+          VarDeklaracija(
+            VarDekla(
+              Type(
+               int
+              ) [Type]
+             i
+              NijeNiz(
+              ) [NijeNiz]
+              ImaJosParametara(
+                NemaViseParametara(
+                ) [NemaViseParametara]
+                NovaPromenljivaPostoji(
+                 fakt
+                  NijeNiz(
+                  ) [NijeNiz]
+                ) [NovaPromenljivaPostoji]
+              ) [ImaJosParametara]
+            ) [VarDekla]
+          ) [VarDeklaracija]
+        ) [Declarations]
+        VarDeklaracija(
+          VarDekla(
+            Type(
+             bool
+            ) [Type]
+           ibool
+            NijeNiz(
+            ) [NijeNiz]
+            NemaViseParametara(
+            ) [NemaViseParametara]
+          ) [VarDekla]
+        ) [VarDeklaracija]
+      ) [Declarations]
+      VarDeklaracija(
+        VarDekla(
+          Type(
+           int
+          ) [Type]
+         niz
+          JesteNiz(
+          ) [JesteNiz]
+          NemaViseParametara(
+          ) [NemaViseParametara]
+        ) [VarDekla]
+      ) [VarDeklaracija]
+    ) [Declarations]
+    VarDeklaracija(
+      VarDekla(
+        Type(
+         int
+        ) [Type]
+       niz2
+        JesteNiz(
+        ) [JesteNiz]
+        NemaViseParametara(
+        ) [NemaViseParametara]
+      ) [VarDekla]
+    ) [VarDeklaracija]
+  ) [Declarations]
+  JesteListaMethodDec(
+    JesteListaMethodDec(
+      JesteListaMethodDec(
+        JesteListaMethodDec(
+          NijeLista(
+          ) [NijeLista]
+          ZavrsenaFunkcija(
+            ImaPovratnuVrednost(
+              Type(
+               char
+              ) [Type]
+             slovo
+            ) [ImaPovratnuVrednost]
+            Parametard(
+              PrviArgumentic(
+                Type(
+                 char
+                ) [Type]
+               a
+                NijeNiz(
+                ) [NijeNiz]
+              ) [PrviArgumentic]
+              ImaJosPars(
+                NemaViseParam(
+                ) [NemaViseParam]
+                ParametarFje(
+                  Type(
+                   int
+                  ) [Type]
+                 pom
+                  NijeNiz(
+                  ) [NijeNiz]
+                ) [ParametarFje]
+              ) [ImaJosPars]
+            ) [Parametard]
+            NijeListaaa(
+            ) [NijeListaaa]
+            StatementListaPostoji(
+              StatementListaPostoji(
+                StatementListaNePostoji(
+                ) [StatementListaNePostoji]
+                MatchedStmt(
+                  DoWhilePetlja(
+                    DetektovaoDo(
+                    ) [DetektovaoDo]
+                    MatchedStmt(
+                      JosStatement(
+                        StatementListaPostoji(
+                          StatementListaPostoji(
+                            StatementListaPostoji(
+                              StatementListaPostoji(
+                                StatementListaPostoji(
+                                  StatementListaPostoji(
+                                    StatementListaPostoji(
+                                      StatementListaPostoji(
+                                        StatementListaNePostoji(
+                                        ) [StatementListaNePostoji]
+                                        MatchedStmt(
+                                          DesignatorStatement(
+                                            UnarniPlusPlus(
+                                              ObicanBroj(
+                                               pom
+                                              ) [ObicanBroj]
+                                            ) [UnarniPlusPlus]
+                                          ) [DesignatorStatement]
+                                        ) [MatchedStmt]
+                                      ) [StatementListaPostoji]
+                                      UnmatchedStmt(
+                                        UnmatchedIfElse(
+                                          Condition(
+                                            CCondTerm(
+                                              CondFactd(
+                                                ExpoPrvi(
+                                                  ObicanExpr(
+                                                    IzrazExprassa(
+                                                      NemaMinusa(
+                                                      ) [NemaMinusa]
+                                                      Term(
+                                                        FactorDesignator(
+                                                          ObicanBroj(
+                                                           a
+                                                          ) [ObicanBroj]
+                                                        ) [FactorDesignator]
+                                                        NemaListaMulFact(
+                                                        ) [NemaListaMulFact]
+                                                      ) [Term]
+                                                      NemaListeOperacija(
+                                                      ) [NemaListeOperacija]
+                                                    ) [IzrazExprassa]
+                                                  ) [ObicanExpr]
+                                                  Isto(
+                                                  ) [Isto]
+                                                ) [ExpoPrvi]
+                                                ObicanExpr(
+                                                  IzrazExprassa(
+                                                    NemaMinusa(
+                                                    ) [NemaMinusa]
+                                                    Term(
+                                                      KarakterKonst(
+                                                       'c'
+                                                      ) [KarakterKonst]
+                                                      NemaListaMulFact(
+                                                      ) [NemaListaMulFact]
+                                                    ) [Term]
+                                                    NemaListeOperacija(
+                                                    ) [NemaListeOperacija]
+                                                  ) [IzrazExprassa]
+                                                ) [ObicanExpr]
+                                              ) [CondFactd]
+                                              PostojiListaCondFact(
+                                                NemaListaCondFact(
+                                                ) [NemaListaCondFact]
+                                                CondFactd(
+                                                  ExpoPrvi(
+                                                    ObicanExpr(
+                                                      IzrazExprassa(
+                                                        NemaMinusa(
+                                                        ) [NemaMinusa]
+                                                        Term(
+                                                          FactorDesignator(
+                                                            ObicanBroj(
+                                                             pom
+                                                            ) [ObicanBroj]
+                                                          ) [FactorDesignator]
+                                                          NemaListaMulFact(
+                                                          ) [NemaListaMulFact]
+                                                        ) [Term]
+                                                        NemaListeOperacija(
+                                                        ) [NemaListeOperacija]
+                                                      ) [IzrazExprassa]
+                                                    ) [ObicanExpr]
+                                                    Malo(
+                                                    ) [Malo]
+                                                  ) [ExpoPrvi]
+                                                  ObicanExpr(
+                                                    IzrazExprassa(
+                                                      NemaMinusa(
+                                                      ) [NemaMinusa]
+                                                      Term(
+                                                        NumerickaKonstanta(
+                                                         10
+                                                        ) [NumerickaKonstanta]
+                                                        NemaListaMulFact(
+                                                        ) [NemaListaMulFact]
+                                                      ) [Term]
+                                                      NemaListeOperacija(
+                                                      ) [NemaListeOperacija]
+                                                    ) [IzrazExprassa]
+                                                  ) [ObicanExpr]
+                                                ) [CondFactd]
+                                              ) [PostojiListaCondFact]
+                                            ) [CCondTerm]
+                                            NemaListaCondTerm(
+                                            ) [NemaListaCondTerm]
+                                          ) [Condition]
+                                          ContinueNaredba(
+                                          ) [ContinueNaredba]
+                                          ElseNaredba(
+                                          ) [ElseNaredba]
+                                          IfNaredba(
+                                            Condition(
+                                              CCondTerm(
+                                                CondFactd(
+                                                  ExpoPrvi(
+                                                    ObicanExpr(
+                                                      IzrazExprassa(
+                                                        NemaMinusa(
+                                                        ) [NemaMinusa]
+                                                        Term(
+                                                          FactorDesignator(
+                                                            ObicanBroj(
+                                                             a
+                                                            ) [ObicanBroj]
+                                                          ) [FactorDesignator]
+                                                          NemaListaMulFact(
+                                                          ) [NemaListaMulFact]
+                                                        ) [Term]
+                                                        NemaListeOperacija(
+                                                        ) [NemaListeOperacija]
+                                                      ) [IzrazExprassa]
+                                                    ) [ObicanExpr]
+                                                    Isto(
+                                                    ) [Isto]
+                                                  ) [ExpoPrvi]
+                                                  ObicanExpr(
+                                                    IzrazExprassa(
+                                                      NemaMinusa(
+                                                      ) [NemaMinusa]
+                                                      Term(
+                                                        KarakterKonst(
+                                                         'b'
+                                                        ) [KarakterKonst]
+                                                        NemaListaMulFact(
+                                                        ) [NemaListaMulFact]
+                                                      ) [Term]
+                                                      NemaListeOperacija(
+                                                      ) [NemaListeOperacija]
+                                                    ) [IzrazExprassa]
+                                                  ) [ObicanExpr]
+                                                ) [CondFactd]
+                                                NemaListaCondFact(
+                                                ) [NemaListaCondFact]
+                                              ) [CCondTerm]
+                                              NemaListaCondTerm(
+                                              ) [NemaListaCondTerm]
+                                            ) [Condition]
+                                            BreakNaredba(
+                                            ) [BreakNaredba]
+                                            ElseNaredba(
+                                            ) [ElseNaredba]
+                                            UnmatchedIf(
+                                              Condition(
+                                                CCondTerm(
+                                                  CondFactd(
+                                                    ExpoPrvi(
+                                                      ObicanExpr(
+                                                        IzrazExprassa(
+                                                          NemaMinusa(
+                                                          ) [NemaMinusa]
+                                                          Term(
+                                                            FactorDesignator(
+                                                              ObicanBroj(
+                                                               a
+                                                              ) [ObicanBroj]
+                                                            ) [FactorDesignator]
+                                                            NemaListaMulFact(
+                                                            ) [NemaListaMulFact]
+                                                          ) [Term]
+                                                          NemaListeOperacija(
+                                                          ) [NemaListeOperacija]
+                                                        ) [IzrazExprassa]
+                                                      ) [ObicanExpr]
+                                                      Isto(
+                                                      ) [Isto]
+                                                    ) [ExpoPrvi]
+                                                    ObicanExpr(
+                                                      IzrazExprassa(
+                                                        NemaMinusa(
+                                                        ) [NemaMinusa]
+                                                        Term(
+                                                          KarakterKonst(
+                                                           'a'
+                                                          ) [KarakterKonst]
+                                                          NemaListaMulFact(
+                                                          ) [NemaListaMulFact]
+                                                        ) [Term]
+                                                        NemaListeOperacija(
+                                                        ) [NemaListeOperacija]
+                                                      ) [IzrazExprassa]
+                                                    ) [ObicanExpr]
+                                                  ) [CondFactd]
+                                                  NemaListaCondFact(
+                                                  ) [NemaListaCondFact]
+                                                ) [CCondTerm]
+                                                NemaListaCondTerm(
+                                                ) [NemaListaCondTerm]
+                                              ) [Condition]
+                                              MatchedStmt(
+                                                DesignatorStatement(
+                                                  UnarniPlusPlus(
+                                                    ObicanBroj(
+                                                     pom
+                                                    ) [ObicanBroj]
+                                                  ) [UnarniPlusPlus]
+                                                ) [DesignatorStatement]
+                                              ) [MatchedStmt]
+                                            ) [UnmatchedIf]
+                                          ) [IfNaredba]
+                                        ) [UnmatchedIfElse]
+                                      ) [UnmatchedStmt]
+                                    ) [StatementListaPostoji]
+                                    MatchedStmt(
+                                      PrintNaredba(
+                                        ObicanExpr(
+                                          IzrazExprassa(
+                                            NemaMinusa(
+                                            ) [NemaMinusa]
+                                            Term(
+                                              FactorDesignator(
+                                                ObicanBroj(
+                                                 pom
+                                                ) [ObicanBroj]
+                                              ) [FactorDesignator]
+                                              NemaListaMulFact(
+                                              ) [NemaListaMulFact]
+                                            ) [Term]
+                                            NemaListeOperacija(
+                                            ) [NemaListeOperacija]
+                                          ) [IzrazExprassa]
+                                        ) [ObicanExpr]
+                                        NePostojiNumerickaKonstanta(
+                                        ) [NePostojiNumerickaKonstanta]
+                                      ) [PrintNaredba]
+                                    ) [MatchedStmt]
+                                  ) [StatementListaPostoji]
+                                  MatchedStmt(
+                                    PrintNaredba(
+                                      ObicanExpr(
+                                        IzrazExprassa(
+                                          NemaMinusa(
+                                          ) [NemaMinusa]
+                                          Term(
+                                            KarakterKonst(
+                                             '.'
+                                            ) [KarakterKonst]
+                                            NemaListaMulFact(
+                                            ) [NemaListaMulFact]
+                                          ) [Term]
+                                          NemaListeOperacija(
+                                          ) [NemaListeOperacija]
+                                        ) [IzrazExprassa]
+                                      ) [ObicanExpr]
+                                      NePostojiNumerickaKonstanta(
+                                      ) [NePostojiNumerickaKonstanta]
+                                    ) [PrintNaredba]
+                                  ) [MatchedStmt]
+                                ) [StatementListaPostoji]
+                                MatchedStmt(
+                                  DoWhilePetlja(
+                                    DetektovaoDo(
+                                    ) [DetektovaoDo]
+                                    MatchedStmt(
+                                      JosStatement(
+                                        StatementListaPostoji(
+                                          StatementListaPostoji(
+                                            StatementListaPostoji(
+                                              StatementListaNePostoji(
+                                              ) [StatementListaNePostoji]
+                                              MatchedStmt(
+                                                DesignatorStatement(
+                                                  UnarniPlusPlus(
+                                                    ObicanBroj(
+                                                     pom
+                                                    ) [ObicanBroj]
+                                                  ) [UnarniPlusPlus]
+                                                ) [DesignatorStatement]
+                                              ) [MatchedStmt]
+                                            ) [StatementListaPostoji]
+                                            UnmatchedStmt(
+                                              UnmatchedIf(
+                                                Condition(
+                                                  CCondTerm(
+                                                    CondFactd(
+                                                      ExpoPrvi(
+                                                        ObicanExpr(
+                                                          IzrazExprassa(
+                                                            NemaMinusa(
+                                                            ) [NemaMinusa]
+                                                            Term(
+                                                              FactorDesignator(
+                                                                ObicanBroj(
+                                                                 pom
+                                                                ) [ObicanBroj]
+                                                              ) [FactorDesignator]
+                                                              NemaListaMulFact(
+                                                              ) [NemaListaMulFact]
+                                                            ) [Term]
+                                                            NemaListeOperacija(
+                                                            ) [NemaListeOperacija]
+                                                          ) [IzrazExprassa]
+                                                        ) [ObicanExpr]
+                                                        Isto(
+                                                        ) [Isto]
+                                                      ) [ExpoPrvi]
+                                                      ObicanExpr(
+                                                        IzrazExprassa(
+                                                          NemaMinusa(
+                                                          ) [NemaMinusa]
+                                                          Term(
+                                                            NumerickaKonstanta(
+                                                             12
+                                                            ) [NumerickaKonstanta]
+                                                            NemaListaMulFact(
+                                                            ) [NemaListaMulFact]
+                                                          ) [Term]
+                                                          NemaListeOperacija(
+                                                          ) [NemaListeOperacija]
+                                                        ) [IzrazExprassa]
+                                                      ) [ObicanExpr]
+                                                    ) [CondFactd]
+                                                    NemaListaCondFact(
+                                                    ) [NemaListaCondFact]
+                                                  ) [CCondTerm]
+                                                  PostojiListaCondTerm(
+                                                    PostojiListaCondTerm(
+                                                      NemaListaCondTerm(
+                                                      ) [NemaListaCondTerm]
+                                                      CCondTerm(
+                                                        CondFactd(
+                                                          ExpoPrvi(
+                                                            ObicanExpr(
+                                                              IzrazExprassa(
+                                                                NemaMinusa(
+                                                                ) [NemaMinusa]
+                                                                Term(
+                                                                  FactorDesignator(
+                                                                    ObicanBroj(
+                                                                     pom
+                                                                    ) [ObicanBroj]
+                                                                  ) [FactorDesignator]
+                                                                  NemaListaMulFact(
+                                                                  ) [NemaListaMulFact]
+                                                                ) [Term]
+                                                                NemaListeOperacija(
+                                                                ) [NemaListeOperacija]
+                                                              ) [IzrazExprassa]
+                                                            ) [ObicanExpr]
+                                                            Isto(
+                                                            ) [Isto]
+                                                          ) [ExpoPrvi]
+                                                          ObicanExpr(
+                                                            IzrazExprassa(
+                                                              NemaMinusa(
+                                                              ) [NemaMinusa]
+                                                              Term(
+                                                                NumerickaKonstanta(
+                                                                 4
+                                                                ) [NumerickaKonstanta]
+                                                                NemaListaMulFact(
+                                                                ) [NemaListaMulFact]
+                                                              ) [Term]
+                                                              NemaListeOperacija(
+                                                              ) [NemaListeOperacija]
+                                                            ) [IzrazExprassa]
+                                                          ) [ObicanExpr]
+                                                        ) [CondFactd]
+                                                        PostojiListaCondFact(
+                                                          NemaListaCondFact(
+                                                          ) [NemaListaCondFact]
+                                                          CondFactd(
+                                                            ExpoPrvi(
+                                                              ObicanExpr(
+                                                                IzrazExprassa(
+                                                                  NemaMinusa(
+                                                                  ) [NemaMinusa]
+                                                                  Term(
+                                                                    FactorDesignator(
+                                                                      ObicanBroj(
+                                                                       a
+                                                                      ) [ObicanBroj]
+                                                                    ) [FactorDesignator]
+                                                                    NemaListaMulFact(
+                                                                    ) [NemaListaMulFact]
+                                                                  ) [Term]
+                                                                  NemaListeOperacija(
+                                                                  ) [NemaListeOperacija]
+                                                                ) [IzrazExprassa]
+                                                              ) [ObicanExpr]
+                                                              Isto(
+                                                              ) [Isto]
+                                                            ) [ExpoPrvi]
+                                                            ObicanExpr(
+                                                              IzrazExprassa(
+                                                                NemaMinusa(
+                                                                ) [NemaMinusa]
+                                                                Term(
+                                                                  KarakterKonst(
+                                                                   'a'
+                                                                  ) [KarakterKonst]
+                                                                  NemaListaMulFact(
+                                                                  ) [NemaListaMulFact]
+                                                                ) [Term]
+                                                                NemaListeOperacija(
+                                                                ) [NemaListeOperacija]
+                                                              ) [IzrazExprassa]
+                                                            ) [ObicanExpr]
+                                                          ) [CondFactd]
+                                                        ) [PostojiListaCondFact]
+                                                      ) [CCondTerm]
+                                                    ) [PostojiListaCondTerm]
+                                                    CCondTerm(
+                                                      CondFactd(
+                                                        ExpoPrvi(
+                                                          ObicanExpr(
+                                                            IzrazExprassa(
+                                                              NemaMinusa(
+                                                              ) [NemaMinusa]
+                                                              Term(
+                                                                FactorDesignator(
+                                                                  ObicanBroj(
+                                                                   pom
+                                                                  ) [ObicanBroj]
+                                                                ) [FactorDesignator]
+                                                                NemaListaMulFact(
+                                                                ) [NemaListaMulFact]
+                                                              ) [Term]
+                                                              NemaListeOperacija(
+                                                              ) [NemaListeOperacija]
+                                                            ) [IzrazExprassa]
+                                                          ) [ObicanExpr]
+                                                          Isto(
+                                                          ) [Isto]
+                                                        ) [ExpoPrvi]
+                                                        ObicanExpr(
+                                                          IzrazExprassa(
+                                                            NemaMinusa(
+                                                            ) [NemaMinusa]
+                                                            Term(
+                                                              NumerickaKonstanta(
+                                                               5
+                                                              ) [NumerickaKonstanta]
+                                                              NemaListaMulFact(
+                                                              ) [NemaListaMulFact]
+                                                            ) [Term]
+                                                            NemaListeOperacija(
+                                                            ) [NemaListeOperacija]
+                                                          ) [IzrazExprassa]
+                                                        ) [ObicanExpr]
+                                                      ) [CondFactd]
+                                                      NemaListaCondFact(
+                                                      ) [NemaListaCondFact]
+                                                    ) [CCondTerm]
+                                                  ) [PostojiListaCondTerm]
+                                                ) [Condition]
+                                                MatchedStmt(
+                                                  BreakNaredba(
+                                                  ) [BreakNaredba]
+                                                ) [MatchedStmt]
+                                              ) [UnmatchedIf]
+                                            ) [UnmatchedStmt]
+                                          ) [StatementListaPostoji]
+                                          MatchedStmt(
+                                            PrintNaredba(
+                                              ObicanExpr(
+                                                IzrazExprassa(
+                                                  NemaMinusa(
+                                                  ) [NemaMinusa]
+                                                  Term(
+                                                    KarakterKonst(
+                                                     '*'
+                                                    ) [KarakterKonst]
+                                                    NemaListaMulFact(
+                                                    ) [NemaListaMulFact]
+                                                  ) [Term]
+                                                  NemaListeOperacija(
+                                                  ) [NemaListeOperacija]
+                                                ) [IzrazExprassa]
+                                              ) [ObicanExpr]
+                                              NePostojiNumerickaKonstanta(
+                                              ) [NePostojiNumerickaKonstanta]
+                                            ) [PrintNaredba]
+                                          ) [MatchedStmt]
+                                        ) [StatementListaPostoji]
+                                      ) [JosStatement]
+                                    ) [MatchedStmt]
+                                    PocetnoWhile(
+                                    ) [PocetnoWhile]
+                                    Condition(
+                                      CCondTerm(
+                                        CondFactd(
+                                          ExpoPrvi(
+                                            ObicanExpr(
+                                              IzrazExprassa(
+                                                NemaMinusa(
+                                                ) [NemaMinusa]
+                                                Term(
+                                                  FactorDesignator(
+                                                    ObicanBroj(
+                                                     pom
+                                                    ) [ObicanBroj]
+                                                  ) [FactorDesignator]
+                                                  NemaListaMulFact(
+                                                  ) [NemaListaMulFact]
+                                                ) [Term]
+                                                NemaListeOperacija(
+                                                ) [NemaListeOperacija]
+                                              ) [IzrazExprassa]
+                                            ) [ObicanExpr]
+                                            Malo(
+                                            ) [Malo]
+                                          ) [ExpoPrvi]
+                                          ObicanExpr(
+                                            IzrazExprassa(
+                                              NemaMinusa(
+                                              ) [NemaMinusa]
+                                              Term(
+                                                NumerickaKonstanta(
+                                                 5
+                                                ) [NumerickaKonstanta]
+                                                NemaListaMulFact(
+                                                ) [NemaListaMulFact]
+                                              ) [Term]
+                                              NemaListeOperacija(
+                                              ) [NemaListeOperacija]
+                                            ) [IzrazExprassa]
+                                          ) [ObicanExpr]
+                                        ) [CondFactd]
+                                        NemaListaCondFact(
+                                        ) [NemaListaCondFact]
+                                      ) [CCondTerm]
+                                      NemaListaCondTerm(
+                                      ) [NemaListaCondTerm]
+                                    ) [Condition]
+                                  ) [DoWhilePetlja]
+                                ) [MatchedStmt]
+                              ) [StatementListaPostoji]
+                              MatchedStmt(
+                                PrintNaredba(
+                                  ObicanExpr(
+                                    IzrazExprassa(
+                                      NemaMinusa(
+                                      ) [NemaMinusa]
+                                      Term(
+                                        KarakterKonst(
+                                         '<'
+                                        ) [KarakterKonst]
+                                        NemaListaMulFact(
+                                        ) [NemaListaMulFact]
+                                      ) [Term]
+                                      NemaListeOperacija(
+                                      ) [NemaListeOperacija]
+                                    ) [IzrazExprassa]
+                                  ) [ObicanExpr]
+                                  NePostojiNumerickaKonstanta(
+                                  ) [NePostojiNumerickaKonstanta]
+                                ) [PrintNaredba]
+                              ) [MatchedStmt]
+                            ) [StatementListaPostoji]
+                            MatchedStmt(
+                              PrintNaredba(
+                                ObicanExpr(
+                                  IzrazExprassa(
+                                    NemaMinusa(
+                                    ) [NemaMinusa]
+                                    Term(
+                                      FactorDesignator(
+                                        ObicanBroj(
+                                         a
+                                        ) [ObicanBroj]
+                                      ) [FactorDesignator]
+                                      NemaListaMulFact(
+                                      ) [NemaListaMulFact]
+                                    ) [Term]
+                                    NemaListeOperacija(
+                                    ) [NemaListeOperacija]
+                                  ) [IzrazExprassa]
+                                ) [ObicanExpr]
+                                NePostojiNumerickaKonstanta(
+                                ) [NePostojiNumerickaKonstanta]
+                              ) [PrintNaredba]
+                            ) [MatchedStmt]
+                          ) [StatementListaPostoji]
+                          MatchedStmt(
+                            PrintNaredba(
+                              ObicanExpr(
+                                IzrazExprassa(
+                                  NemaMinusa(
+                                  ) [NemaMinusa]
+                                  Term(
+                                    KarakterKonst(
+                                     '>'
+                                    ) [KarakterKonst]
+                                    NemaListaMulFact(
+                                    ) [NemaListaMulFact]
+                                  ) [Term]
+                                  NemaListeOperacija(
+                                  ) [NemaListeOperacija]
+                                ) [IzrazExprassa]
+                              ) [ObicanExpr]
+                              NePostojiNumerickaKonstanta(
+                              ) [NePostojiNumerickaKonstanta]
+                            ) [PrintNaredba]
+                          ) [MatchedStmt]
+                        ) [StatementListaPostoji]
+                      ) [JosStatement]
+                    ) [MatchedStmt]
+                    PocetnoWhile(
+                    ) [PocetnoWhile]
+                    Condition(
+                      CCondTerm(
+                        CondFactd(
+                          ExpoPrvi(
+                            ObicanExpr(
+                              IzrazExprassa(
+                                NemaMinusa(
+                                ) [NemaMinusa]
+                                Term(
+                                  FactorDesignator(
+                                    ObicanBroj(
+                                     pom
+                                    ) [ObicanBroj]
+                                  ) [FactorDesignator]
+                                  NemaListaMulFact(
+                                  ) [NemaListaMulFact]
+                                ) [Term]
+                                NemaListeOperacija(
+                                ) [NemaListeOperacija]
+                              ) [IzrazExprassa]
+                            ) [ObicanExpr]
+                            Malo(
+                            ) [Malo]
+                          ) [ExpoPrvi]
+                          ObicanExpr(
+                            IzrazExprassa(
+                              NemaMinusa(
+                              ) [NemaMinusa]
+                              Term(
+                                NumerickaKonstanta(
+                                 15
+                                ) [NumerickaKonstanta]
+                                NemaListaMulFact(
+                                ) [NemaListaMulFact]
+                              ) [Term]
+                              NemaListeOperacija(
+                              ) [NemaListeOperacija]
+                            ) [IzrazExprassa]
+                          ) [ObicanExpr]
+                        ) [CondFactd]
+                        NemaListaCondFact(
+                        ) [NemaListaCondFact]
+                      ) [CCondTerm]
+                      PostojiListaCondTerm(
+                        NemaListaCondTerm(
+                        ) [NemaListaCondTerm]
+                        CCondTerm(
+                          CondFactd(
+                            ExpoPrvi(
+                              ObicanExpr(
+                                IzrazExprassa(
+                                  NemaMinusa(
+                                  ) [NemaMinusa]
+                                  Term(
+                                    FactorDesignator(
+                                      ObicanBroj(
+                                       pom
+                                      ) [ObicanBroj]
+                                    ) [FactorDesignator]
+                                    NemaListaMulFact(
+                                    ) [NemaListaMulFact]
+                                  ) [Term]
+                                  NemaListeOperacija(
+                                  ) [NemaListeOperacija]
+                                ) [IzrazExprassa]
+                              ) [ObicanExpr]
+                              Isto(
+                              ) [Isto]
+                            ) [ExpoPrvi]
+                            ObicanExpr(
+                              IzrazExprassa(
+                                NemaMinusa(
+                                ) [NemaMinusa]
+                                Term(
+                                  NumerickaKonstanta(
+                                   16
+                                  ) [NumerickaKonstanta]
+                                  NemaListaMulFact(
+                                  ) [NemaListaMulFact]
+                                ) [Term]
+                                NemaListeOperacija(
+                                ) [NemaListeOperacija]
+                              ) [IzrazExprassa]
+                            ) [ObicanExpr]
+                          ) [CondFactd]
+                          NemaListaCondFact(
+                          ) [NemaListaCondFact]
+                        ) [CCondTerm]
+                      ) [PostojiListaCondTerm]
+                    ) [Condition]
+                  ) [DoWhilePetlja]
+                ) [MatchedStmt]
+              ) [StatementListaPostoji]
+              MatchedStmt(
+                ReturnNaredba(
+                  PostojiExpr(
+                    ObicanExpr(
+                      IzrazExprassa(
+                        NemaMinusa(
+                        ) [NemaMinusa]
+                        Term(
+                          Pozivi(
+                            PomocniPostoji(
+                              ObicanBroj(
+                               chr
+                              ) [ObicanBroj]
+                              PostojiActPars(
+                                ActParsListaPostoji(
+                                  ActParsic(
+                                    ActParsPrvi(
+                                      ObicanExpr(
+                                        IzrazExprassa(
+                                          NemaMinusa(
+                                          ) [NemaMinusa]
+                                          Term(
+                                            FactorDesignator(
+                                              ObicanBroj(
+                                               pom
+                                              ) [ObicanBroj]
+                                            ) [FactorDesignator]
+                                            NemaListaMulFact(
+                                            ) [NemaListaMulFact]
+                                          ) [Term]
+                                          ListaOperacijaPostoji(
+                                            NemaListeOperacija(
+                                            ) [NemaListeOperacija]
+                                            JednaOperacija(
+                                              Sabiranje(
+                                              ) [Sabiranje]
+                                              Term(
+                                                Pozivi(
+                                                  PomocniPostoji(
+                                                    ObicanBroj(
+                                                     ord
+                                                    ) [ObicanBroj]
+                                                    PostojiActPars(
+                                                      ActParsListaPostoji(
+                                                        ActParsic(
+                                                          ActParsPrvi(
+                                                            ObicanExpr(
+                                                              IzrazExprassa(
+                                                                NemaMinusa(
+                                                                ) [NemaMinusa]
+                                                                Term(
+                                                                  FactorDesignator(
+                                                                    ObicanBroj(
+                                                                     a
+                                                                    ) [ObicanBroj]
+                                                                  ) [FactorDesignator]
+                                                                  NemaListaMulFact(
+                                                                  ) [NemaListaMulFact]
+                                                                ) [Term]
+                                                                NemaListeOperacija(
+                                                                ) [NemaListeOperacija]
+                                                              ) [IzrazExprassa]
+                                                            ) [ObicanExpr]
+                                                          ) [ActParsPrvi]
+                                                          NemaExpresion(
+                                                          ) [NemaExpresion]
+                                                        ) [ActParsic]
+                                                      ) [ActParsListaPostoji]
+                                                    ) [PostojiActPars]
+                                                  ) [PomocniPostoji]
+                                                ) [Pozivi]
+                                                NemaListaMulFact(
+                                                ) [NemaListaMulFact]
+                                              ) [Term]
+                                            ) [JednaOperacija]
+                                          ) [ListaOperacijaPostoji]
+                                        ) [IzrazExprassa]
+                                      ) [ObicanExpr]
+                                    ) [ActParsPrvi]
+                                    NemaExpresion(
+                                    ) [NemaExpresion]
+                                  ) [ActParsic]
+                                ) [ActParsListaPostoji]
+                              ) [PostojiActPars]
+                            ) [PomocniPostoji]
+                          ) [Pozivi]
+                          NemaListaMulFact(
+                          ) [NemaListaMulFact]
+                        ) [Term]
+                        NemaListeOperacija(
+                        ) [NemaListeOperacija]
+                      ) [IzrazExprassa]
+                    ) [ObicanExpr]
+                  ) [PostojiExpr]
+                ) [ReturnNaredba]
+              ) [MatchedStmt]
+            ) [StatementListaPostoji]
+          ) [ZavrsenaFunkcija]
+        ) [JesteListaMethodDec]
+        ZavrsenaFunkcija(
+          ImaPovratnuVrednost(
+            Type(
+             int
+            ) [Type]
+           zamena
+          ) [ImaPovratnuVrednost]
+          Parametard(
+            PrviArgumentic(
+              Type(
+               int
+              ) [Type]
+             niz
+              JesteNiz(
+              ) [JesteNiz]
+            ) [PrviArgumentic]
+            ImaJosPars(
+              ImaJosPars(
+                NemaViseParam(
+                ) [NemaViseParam]
+                ParametarFje(
+                  Type(
+                   int
+                  ) [Type]
+                 i
+                  NijeNiz(
+                  ) [NijeNiz]
+                ) [ParametarFje]
+              ) [ImaJosPars]
+              ParametarFje(
+                Type(
+                 int
+                ) [Type]
+               b
+                NijeNiz(
+                ) [NijeNiz]
+              ) [ParametarFje]
+            ) [ImaJosPars]
+          ) [Parametard]
+          JesteListaVarDekl(
+            JesteListaVarDekl(
+              NijeListaaa(
+              ) [NijeListaaa]
+              VarDekla(
+                Type(
+                 int
+                ) [Type]
+               pom
+                NijeNiz(
+                ) [NijeNiz]
+                NemaViseParametara(
+                ) [NemaViseParametara]
+              ) [VarDekla]
+            ) [JesteListaVarDekl]
+            VarDekla(
+              Type(
+               int
+              ) [Type]
+             pom2
+              NijeNiz(
+              ) [NijeNiz]
+              NemaViseParametara(
+              ) [NemaViseParametara]
+            ) [VarDekla]
+          ) [JesteListaVarDekl]
+          StatementListaPostoji(
+            StatementListaNePostoji(
+            ) [StatementListaNePostoji]
+            UnmatchedStmt(
+              UnmatchedIfElse(
+                Condition(
+                  CCondTerm(
+                    CondFactd(
+                      ExpoPrvi(
+                        ObicanExpr(
+                          IzrazExprassa(
+                            NemaMinusa(
+                            ) [NemaMinusa]
+                            Term(
+                              FactorDesignator(
+                                ObicanBroj(
+                                 i
+                                ) [ObicanBroj]
+                              ) [FactorDesignator]
+                              NemaListaMulFact(
+                              ) [NemaListaMulFact]
+                            ) [Term]
+                            NemaListeOperacija(
+                            ) [NemaListeOperacija]
+                          ) [IzrazExprassa]
+                        ) [ObicanExpr]
+                        AVise(
+                        ) [AVise]
+                      ) [ExpoPrvi]
+                      ObicanExpr(
+                        IzrazExprassa(
+                          NemaMinusa(
+                          ) [NemaMinusa]
+                          Term(
+                            Pozivi(
+                              PomocniPostoji(
+                                ObicanBroj(
+                                 len
+                                ) [ObicanBroj]
+                                PostojiActPars(
+                                  ActParsListaPostoji(
+                                    ActParsic(
+                                      ActParsPrvi(
+                                        ObicanExpr(
+                                          IzrazExprassa(
+                                            NemaMinusa(
+                                            ) [NemaMinusa]
+                                            Term(
+                                              FactorDesignator(
+                                                ObicanBroj(
+                                                 niz
+                                                ) [ObicanBroj]
+                                              ) [FactorDesignator]
+                                              NemaListaMulFact(
+                                              ) [NemaListaMulFact]
+                                            ) [Term]
+                                            NemaListeOperacija(
+                                            ) [NemaListeOperacija]
+                                          ) [IzrazExprassa]
+                                        ) [ObicanExpr]
+                                      ) [ActParsPrvi]
+                                      NemaExpresion(
+                                      ) [NemaExpresion]
+                                    ) [ActParsic]
+                                  ) [ActParsListaPostoji]
+                                ) [PostojiActPars]
+                              ) [PomocniPostoji]
+                            ) [Pozivi]
+                            NemaListaMulFact(
+                            ) [NemaListaMulFact]
+                          ) [Term]
+                          NemaListeOperacija(
+                          ) [NemaListeOperacija]
+                        ) [IzrazExprassa]
+                      ) [ObicanExpr]
+                    ) [CondFactd]
+                    NemaListaCondFact(
+                    ) [NemaListaCondFact]
+                  ) [CCondTerm]
+                  PostojiListaCondTerm(
+                    NemaListaCondTerm(
+                    ) [NemaListaCondTerm]
+                    CCondTerm(
+                      CondFactd(
+                        ExpoPrvi(
+                          ObicanExpr(
+                            IzrazExprassa(
+                              NemaMinusa(
+                              ) [NemaMinusa]
+                              Term(
+                                FactorDesignator(
+                                  ObicanBroj(
+                                   b
+                                  ) [ObicanBroj]
+                                ) [FactorDesignator]
+                                NemaListaMulFact(
+                                ) [NemaListaMulFact]
+                              ) [Term]
+                              NemaListeOperacija(
+                              ) [NemaListeOperacija]
+                            ) [IzrazExprassa]
+                          ) [ObicanExpr]
+                          AVise(
+                          ) [AVise]
+                        ) [ExpoPrvi]
+                        ObicanExpr(
+                          IzrazExprassa(
+                            NemaMinusa(
+                            ) [NemaMinusa]
+                            Term(
+                              Pozivi(
+                                PomocniPostoji(
+                                  ObicanBroj(
+                                   len
+                                  ) [ObicanBroj]
+                                  PostojiActPars(
+                                    ActParsListaPostoji(
+                                      ActParsic(
+                                        ActParsPrvi(
+                                          ObicanExpr(
+                                            IzrazExprassa(
+                                              NemaMinusa(
+                                              ) [NemaMinusa]
+                                              Term(
+                                                FactorDesignator(
+                                                  ObicanBroj(
+                                                   niz
+                                                  ) [ObicanBroj]
+                                                ) [FactorDesignator]
+                                                NemaListaMulFact(
+                                                ) [NemaListaMulFact]
+                                              ) [Term]
+                                              NemaListeOperacija(
+                                              ) [NemaListeOperacija]
+                                            ) [IzrazExprassa]
+                                          ) [ObicanExpr]
+                                        ) [ActParsPrvi]
+                                        NemaExpresion(
+                                        ) [NemaExpresion]
+                                      ) [ActParsic]
+                                    ) [ActParsListaPostoji]
+                                  ) [PostojiActPars]
+                                ) [PomocniPostoji]
+                              ) [Pozivi]
+                              NemaListaMulFact(
+                              ) [NemaListaMulFact]
+                            ) [Term]
+                            NemaListeOperacija(
+                            ) [NemaListeOperacija]
+                          ) [IzrazExprassa]
+                        ) [ObicanExpr]
+                      ) [CondFactd]
+                      NemaListaCondFact(
+                      ) [NemaListaCondFact]
+                    ) [CCondTerm]
+                  ) [PostojiListaCondTerm]
+                ) [Condition]
+                JosStatement(
+                  StatementListaPostoji(
+                    StatementListaPostoji(
+                      StatementListaNePostoji(
+                      ) [StatementListaNePostoji]
+                      MatchedStmt(
+                        PrintNaredba(
+                          ObicanExpr(
+                            IzrazExprassa(
+                              NemaMinusa(
+                              ) [NemaMinusa]
+                              Term(
+                                KarakterKonst(
+                                 'G'
+                                ) [KarakterKonst]
+                                NemaListaMulFact(
+                                ) [NemaListaMulFact]
+                              ) [Term]
+                              NemaListeOperacija(
+                              ) [NemaListeOperacija]
+                            ) [IzrazExprassa]
+                          ) [ObicanExpr]
+                          NePostojiNumerickaKonstanta(
+                          ) [NePostojiNumerickaKonstanta]
+                        ) [PrintNaredba]
+                      ) [MatchedStmt]
+                    ) [StatementListaPostoji]
+                    MatchedStmt(
+                      ReturnNaredba(
+                        PostojiExpr(
+                          ObicanExpr(
+                            IzrazExprassa(
+                              PostojiMinus(
+                              ) [PostojiMinus]
+                              Term(
+                                NumerickaKonstanta(
+                                 1
+                                ) [NumerickaKonstanta]
+                                NemaListaMulFact(
+                                ) [NemaListaMulFact]
+                              ) [Term]
+                              NemaListeOperacija(
+                              ) [NemaListeOperacija]
+                            ) [IzrazExprassa]
+                          ) [ObicanExpr]
+                        ) [PostojiExpr]
+                      ) [ReturnNaredba]
+                    ) [MatchedStmt]
+                  ) [StatementListaPostoji]
+                ) [JosStatement]
+                ElseNaredba(
+                ) [ElseNaredba]
+                JosStatement(
+                  StatementListaPostoji(
+                    StatementListaPostoji(
+                      StatementListaPostoji(
+                        StatementListaPostoji(
+                          StatementListaPostoji(
+                            StatementListaNePostoji(
+                            ) [StatementListaNePostoji]
+                            MatchedStmt(
+                              DesignatorStatement(
+                                DodelaVrednostiDes(
+                                  ObicanBroj(
+                                   pom2
+                                  ) [ObicanBroj]
+                                  Izjednacavanje(
+                                  ) [Izjednacavanje]
+                                  ObicanExpr(
+                                    IzrazExprassa(
+                                      NemaMinusa(
+                                      ) [NemaMinusa]
+                                      Term(
+                                        FactorDesignator(
+                                          DesignatorNiz(
+                                            ElementNiza(
+                                             niz
+                                            ) [ElementNiza]
+                                            ObicanExpr(
+                                              IzrazExprassa(
+                                                NemaMinusa(
+                                                ) [NemaMinusa]
+                                                Term(
+                                                  FactorDesignator(
+                                                    ObicanBroj(
+                                                     b
+                                                    ) [ObicanBroj]
+                                                  ) [FactorDesignator]
+                                                  NemaListaMulFact(
+                                                  ) [NemaListaMulFact]
+                                                ) [Term]
+                                                NemaListeOperacija(
+                                                ) [NemaListeOperacija]
+                                              ) [IzrazExprassa]
+                                            ) [ObicanExpr]
+                                          ) [DesignatorNiz]
+                                        ) [FactorDesignator]
+                                        NemaListaMulFact(
+                                        ) [NemaListaMulFact]
+                                      ) [Term]
+                                      NemaListeOperacija(
+                                      ) [NemaListeOperacija]
+                                    ) [IzrazExprassa]
+                                  ) [ObicanExpr]
+                                ) [DodelaVrednostiDes]
+                              ) [DesignatorStatement]
+                            ) [MatchedStmt]
+                          ) [StatementListaPostoji]
+                          MatchedStmt(
+                            DesignatorStatement(
+                              DodelaVrednostiDes(
+                                ObicanBroj(
+                                 pom
+                                ) [ObicanBroj]
+                                Izjednacavanje(
+                                ) [Izjednacavanje]
+                                ObicanExpr(
+                                  IzrazExprassa(
+                                    NemaMinusa(
+                                    ) [NemaMinusa]
+                                    Term(
+                                      FactorDesignator(
+                                        DesignatorNiz(
+                                          ElementNiza(
+                                           niz
+                                          ) [ElementNiza]
+                                          ObicanExpr(
+                                            IzrazExprassa(
+                                              NemaMinusa(
+                                              ) [NemaMinusa]
+                                              Term(
+                                                FactorDesignator(
+                                                  ObicanBroj(
+                                                   i
+                                                  ) [ObicanBroj]
+                                                ) [FactorDesignator]
+                                                NemaListaMulFact(
+                                                ) [NemaListaMulFact]
+                                              ) [Term]
+                                              NemaListeOperacija(
+                                              ) [NemaListeOperacija]
+                                            ) [IzrazExprassa]
+                                          ) [ObicanExpr]
+                                        ) [DesignatorNiz]
+                                      ) [FactorDesignator]
+                                      NemaListaMulFact(
+                                      ) [NemaListaMulFact]
+                                    ) [Term]
+                                    NemaListeOperacija(
+                                    ) [NemaListeOperacija]
+                                  ) [IzrazExprassa]
+                                ) [ObicanExpr]
+                              ) [DodelaVrednostiDes]
+                            ) [DesignatorStatement]
+                          ) [MatchedStmt]
+                        ) [StatementListaPostoji]
+                        MatchedStmt(
+                          DesignatorStatement(
+                            DodelaVrednostiDes(
+                              DesignatorNiz(
+                                ElementNiza(
+                                 niz
+                                ) [ElementNiza]
+                                ObicanExpr(
+                                  IzrazExprassa(
+                                    NemaMinusa(
+                                    ) [NemaMinusa]
+                                    Term(
+                                      FactorDesignator(
+                                        ObicanBroj(
+                                         b
+                                        ) [ObicanBroj]
+                                      ) [FactorDesignator]
+                                      NemaListaMulFact(
+                                      ) [NemaListaMulFact]
+                                    ) [Term]
+                                    NemaListeOperacija(
+                                    ) [NemaListeOperacija]
+                                  ) [IzrazExprassa]
+                                ) [ObicanExpr]
+                              ) [DesignatorNiz]
+                              Izjednacavanje(
+                              ) [Izjednacavanje]
+                              ObicanExpr(
+                                IzrazExprassa(
+                                  NemaMinusa(
+                                  ) [NemaMinusa]
+                                  Term(
+                                    FactorDesignator(
+                                      ObicanBroj(
+                                       pom
+                                      ) [ObicanBroj]
+                                    ) [FactorDesignator]
+                                    NemaListaMulFact(
+                                    ) [NemaListaMulFact]
+                                  ) [Term]
+                                  NemaListeOperacija(
+                                  ) [NemaListeOperacija]
+                                ) [IzrazExprassa]
+                              ) [ObicanExpr]
+                            ) [DodelaVrednostiDes]
+                          ) [DesignatorStatement]
+                        ) [MatchedStmt]
+                      ) [StatementListaPostoji]
+                      MatchedStmt(
+                        DesignatorStatement(
+                          DodelaVrednostiDes(
+                            DesignatorNiz(
+                              ElementNiza(
+                               niz
+                              ) [ElementNiza]
+                              ObicanExpr(
+                                IzrazExprassa(
+                                  NemaMinusa(
+                                  ) [NemaMinusa]
+                                  Term(
+                                    FactorDesignator(
+                                      ObicanBroj(
+                                       i
+                                      ) [ObicanBroj]
+                                    ) [FactorDesignator]
+                                    NemaListaMulFact(
+                                    ) [NemaListaMulFact]
+                                  ) [Term]
+                                  NemaListeOperacija(
+                                  ) [NemaListeOperacija]
+                                ) [IzrazExprassa]
+                              ) [ObicanExpr]
+                            ) [DesignatorNiz]
+                            Izjednacavanje(
+                            ) [Izjednacavanje]
+                            ObicanExpr(
+                              IzrazExprassa(
+                                NemaMinusa(
+                                ) [NemaMinusa]
+                                Term(
+                                  FactorDesignator(
+                                    ObicanBroj(
+                                     pom2
+                                    ) [ObicanBroj]
+                                  ) [FactorDesignator]
+                                  NemaListaMulFact(
+                                  ) [NemaListaMulFact]
+                                ) [Term]
+                                NemaListeOperacija(
+                                ) [NemaListeOperacija]
+                              ) [IzrazExprassa]
+                            ) [ObicanExpr]
+                          ) [DodelaVrednostiDes]
+                        ) [DesignatorStatement]
+                      ) [MatchedStmt]
+                    ) [StatementListaPostoji]
+                    MatchedStmt(
+                      ReturnNaredba(
+                        PostojiExpr(
+                          ObicanExpr(
+                            IzrazExprassa(
+                              NemaMinusa(
+                              ) [NemaMinusa]
+                              Term(
+                                NoviIzraz(
+                                  NoviIzraz2(
+                                  ) [NoviIzraz2]
+                                  IzrazExpr(
+                                    TesrnarniUslov(
+                                      IzrazExprassa(
+                                        NemaMinusa(
+                                        ) [NemaMinusa]
+                                        Term(
+                                          FactorDesignator(
+                                            ObicanBroj(
+                                             pom
+                                            ) [ObicanBroj]
+                                          ) [FactorDesignator]
+                                          NemaListaMulFact(
+                                          ) [NemaListaMulFact]
+                                        ) [Term]
+                                        NemaListeOperacija(
+                                        ) [NemaListeOperacija]
+                                      ) [IzrazExprassa]
+                                    ) [TesrnarniUslov]
+                                    TernarniPrvaOpcija(
+                                      IzrazExprassa(
+                                        NemaMinusa(
+                                        ) [NemaMinusa]
+                                        Term(
+                                          FactorDesignator(
+                                            ObicanBroj(
+                                             pom2
+                                            ) [ObicanBroj]
+                                          ) [FactorDesignator]
+                                          NemaListaMulFact(
+                                          ) [NemaListaMulFact]
+                                        ) [Term]
+                                        ListaOperacijaPostoji(
+                                          NemaListeOperacija(
+                                          ) [NemaListeOperacija]
+                                          JednaOperacija(
+                                            Sabiranje(
+                                            ) [Sabiranje]
+                                            Term(
+                                              NumerickaKonstanta(
+                                               50
+                                              ) [NumerickaKonstanta]
+                                              NemaListaMulFact(
+                                              ) [NemaListaMulFact]
+                                            ) [Term]
+                                          ) [JednaOperacija]
+                                        ) [ListaOperacijaPostoji]
+                                      ) [IzrazExprassa]
+                                    ) [TernarniPrvaOpcija]
+                                    TernarniDrugaOpcija(
+                                      IzrazExprassa(
+                                        NemaMinusa(
+                                        ) [NemaMinusa]
+                                        Term(
+                                          FactorDesignator(
+                                            ObicanBroj(
+                                             pom2
+                                            ) [ObicanBroj]
+                                          ) [FactorDesignator]
+                                          NemaListaMulFact(
+                                          ) [NemaListaMulFact]
+                                        ) [Term]
+                                        ListaOperacijaPostoji(
+                                          NemaListeOperacija(
+                                          ) [NemaListeOperacija]
+                                          JednaOperacija(
+                                            Sabiranje(
+                                            ) [Sabiranje]
+                                            Term(
+                                              NumerickaKonstanta(
+                                               40
+                                              ) [NumerickaKonstanta]
+                                              NemaListaMulFact(
+                                              ) [NemaListaMulFact]
+                                            ) [Term]
+                                          ) [JednaOperacija]
+                                        ) [ListaOperacijaPostoji]
+                                      ) [IzrazExprassa]
+                                    ) [TernarniDrugaOpcija]
+                                  ) [IzrazExpr]
+                                ) [NoviIzraz]
+                                NemaListaMulFact(
+                                ) [NemaListaMulFact]
+                              ) [Term]
+                              NemaListeOperacija(
+                              ) [NemaListeOperacija]
+                            ) [IzrazExprassa]
+                          ) [ObicanExpr]
+                        ) [PostojiExpr]
+                      ) [ReturnNaredba]
+                    ) [MatchedStmt]
+                  ) [StatementListaPostoji]
+                ) [JosStatement]
+              ) [UnmatchedIfElse]
+            ) [UnmatchedStmt]
+          ) [StatementListaPostoji]
+        ) [ZavrsenaFunkcija]
+      ) [JesteListaMethodDec]
+      ZavrsenaFunkcija(
+        ImaPovratnuVrednost(
+          Type(
+           int
+          ) [Type]
+         faktorijel
+        ) [ImaPovratnuVrednost]
+        Parametard(
+          PrviArgumentic(
+            Type(
+             int
+            ) [Type]
+           n
+            NijeNiz(
+            ) [NijeNiz]
+          ) [PrviArgumentic]
+          NemaViseParam(
+          ) [NemaViseParam]
+        ) [Parametard]
+        JesteListaVarDekl(
+          JesteListaVarDekl(
+            NijeListaaa(
+            ) [NijeListaaa]
+            VarDekla(
+              Type(
+               int
+              ) [Type]
+             pom
+              NijeNiz(
+              ) [NijeNiz]
+              NemaViseParametara(
+              ) [NemaViseParametara]
+            ) [VarDekla]
+          ) [JesteListaVarDekl]
+          VarDekla(
+            Type(
+             int
+            ) [Type]
+           pom2
+            NijeNiz(
+            ) [NijeNiz]
+            NemaViseParametara(
+            ) [NemaViseParametara]
+          ) [VarDekla]
+        ) [JesteListaVarDekl]
+        StatementListaPostoji(
+          StatementListaPostoji(
+            StatementListaPostoji(
+              StatementListaPostoji(
+                StatementListaNePostoji(
+                ) [StatementListaNePostoji]
+                UnmatchedStmt(
+                  UnmatchedIf(
+                    Condition(
+                      CCondTerm(
+                        CondFactd(
+                          ExpoPrvi(
+                            ObicanExpr(
+                              IzrazExprassa(
+                                NemaMinusa(
+                                ) [NemaMinusa]
+                                Term(
+                                  FactorDesignator(
+                                    ObicanBroj(
+                                     n
+                                    ) [ObicanBroj]
+                                  ) [FactorDesignator]
+                                  NemaListaMulFact(
+                                  ) [NemaListaMulFact]
+                                ) [Term]
+                                NemaListeOperacija(
+                                ) [NemaListeOperacija]
+                              ) [IzrazExprassa]
+                            ) [ObicanExpr]
+                            AVise(
+                            ) [AVise]
+                          ) [ExpoPrvi]
+                          ObicanExpr(
+                            IzrazExprassa(
+                              NemaMinusa(
+                              ) [NemaMinusa]
+                              Term(
+                                NumerickaKonstanta(
+                                 0
+                                ) [NumerickaKonstanta]
+                                NemaListaMulFact(
+                                ) [NemaListaMulFact]
+                              ) [Term]
+                              NemaListeOperacija(
+                              ) [NemaListeOperacija]
+                            ) [IzrazExprassa]
+                          ) [ObicanExpr]
+                        ) [CondFactd]
+                        NemaListaCondFact(
+                        ) [NemaListaCondFact]
+                      ) [CCondTerm]
+                      NemaListaCondTerm(
+                      ) [NemaListaCondTerm]
+                    ) [Condition]
+                    MatchedStmt(
+                      DesignatorStatement(
+                        DodelaVrednostiDes(
+                          ObicanBroj(
+                           pom
+                          ) [ObicanBroj]
+                          Izjednacavanje(
+                          ) [Izjednacavanje]
+                          ObicanExpr(
+                            IzrazExprassa(
+                              NemaMinusa(
+                              ) [NemaMinusa]
+                              Term(
+                                Pozivi(
+                                  PomocniPostoji(
+                                    ObicanBroj(
+                                     faktorijel
+                                    ) [ObicanBroj]
+                                    PostojiActPars(
+                                      ActParsListaPostoji(
+                                        ActParsic(
+                                          ActParsPrvi(
+                                            ObicanExpr(
+                                              IzrazExprassa(
+                                                NemaMinusa(
+                                                ) [NemaMinusa]
+                                                Term(
+                                                  FactorDesignator(
+                                                    ObicanBroj(
+                                                     n
+                                                    ) [ObicanBroj]
+                                                  ) [FactorDesignator]
+                                                  NemaListaMulFact(
+                                                  ) [NemaListaMulFact]
+                                                ) [Term]
+                                                ListaOperacijaPostoji(
+                                                  NemaListeOperacija(
+                                                  ) [NemaListeOperacija]
+                                                  JednaOperacija(
+                                                    Oduzimanje(
+                                                    ) [Oduzimanje]
+                                                    Term(
+                                                      NumerickaKonstanta(
+                                                       1
+                                                      ) [NumerickaKonstanta]
+                                                      NemaListaMulFact(
+                                                      ) [NemaListaMulFact]
+                                                    ) [Term]
+                                                  ) [JednaOperacija]
+                                                ) [ListaOperacijaPostoji]
+                                              ) [IzrazExprassa]
+                                            ) [ObicanExpr]
+                                          ) [ActParsPrvi]
+                                          NemaExpresion(
+                                          ) [NemaExpresion]
+                                        ) [ActParsic]
+                                      ) [ActParsListaPostoji]
+                                    ) [PostojiActPars]
+                                  ) [PomocniPostoji]
+                                ) [Pozivi]
+                                NemaListaMulFact(
+                                ) [NemaListaMulFact]
+                              ) [Term]
+                              NemaListeOperacija(
+                              ) [NemaListeOperacija]
+                            ) [IzrazExprassa]
+                          ) [ObicanExpr]
+                        ) [DodelaVrednostiDes]
+                      ) [DesignatorStatement]
+                    ) [MatchedStmt]
+                  ) [UnmatchedIf]
+                ) [UnmatchedStmt]
+              ) [StatementListaPostoji]
+              MatchedStmt(
+                IfNaredba(
+                  Condition(
+                    CCondTerm(
+                      CondFactd(
+                        ExpoPrvi(
+                          ObicanExpr(
+                            IzrazExprassa(
+                              NemaMinusa(
+                              ) [NemaMinusa]
+                              Term(
+                                FactorDesignator(
+                                  ObicanBroj(
+                                   n
+                                  ) [ObicanBroj]
+                                ) [FactorDesignator]
+                                NemaListaMulFact(
+                                ) [NemaListaMulFact]
+                              ) [Term]
+                              NemaListeOperacija(
+                              ) [NemaListeOperacija]
+                            ) [IzrazExprassa]
+                          ) [ObicanExpr]
+                          Razlicito(
+                          ) [Razlicito]
+                        ) [ExpoPrvi]
+                        ObicanExpr(
+                          IzrazExprassa(
+                            NemaMinusa(
+                            ) [NemaMinusa]
+                            Term(
+                              NumerickaKonstanta(
+                               0
+                              ) [NumerickaKonstanta]
+                              NemaListaMulFact(
+                              ) [NemaListaMulFact]
+                            ) [Term]
+                            NemaListeOperacija(
+                            ) [NemaListeOperacija]
+                          ) [IzrazExprassa]
+                        ) [ObicanExpr]
+                      ) [CondFactd]
+                      NemaListaCondFact(
+                      ) [NemaListaCondFact]
+                    ) [CCondTerm]
+                    NemaListaCondTerm(
+                    ) [NemaListaCondTerm]
+                  ) [Condition]
+                  DesignatorStatement(
+                    DodelaVrednostiDes(
+                      ObicanBroj(
+                       pom2
+                      ) [ObicanBroj]
+                      Izjednacavanje(
+                      ) [Izjednacavanje]
+                      ObicanExpr(
+                        IzrazExprassa(
+                          NemaMinusa(
+                          ) [NemaMinusa]
+                          Term(
+                            FactorDesignator(
+                              ObicanBroj(
+                               pom
+                              ) [ObicanBroj]
+                            ) [FactorDesignator]
+                            PostojiListaMulFact(
+                              NemaListaMulFact(
+                              ) [NemaListaMulFact]
+                              MulFact(
+                                Mnozenje(
+                                ) [Mnozenje]
+                                FactorDesignator(
+                                  ObicanBroj(
+                                   n
+                                  ) [ObicanBroj]
+                                ) [FactorDesignator]
+                              ) [MulFact]
+                            ) [PostojiListaMulFact]
+                          ) [Term]
+                          NemaListeOperacija(
+                          ) [NemaListeOperacija]
+                        ) [IzrazExprassa]
+                      ) [ObicanExpr]
+                    ) [DodelaVrednostiDes]
+                  ) [DesignatorStatement]
+                  ElseNaredba(
+                  ) [ElseNaredba]
+                  UnmatchedIf(
+                    Condition(
+                      CCondTerm(
+                        CondFactd(
+                          ExpoPrvi(
+                            ObicanExpr(
+                              IzrazExprassa(
+                                NemaMinusa(
+                                ) [NemaMinusa]
+                                Term(
+                                  FactorDesignator(
+                                    ObicanBroj(
+                                     n
+                                    ) [ObicanBroj]
+                                  ) [FactorDesignator]
+                                  NemaListaMulFact(
+                                  ) [NemaListaMulFact]
+                                ) [Term]
+                                NemaListeOperacija(
+                                ) [NemaListeOperacija]
+                              ) [IzrazExprassa]
+                            ) [ObicanExpr]
+                            Isto(
+                            ) [Isto]
+                          ) [ExpoPrvi]
+                          ObicanExpr(
+                            IzrazExprassa(
+                              NemaMinusa(
+                              ) [NemaMinusa]
+                              Term(
+                                NumerickaKonstanta(
+                                 0
+                                ) [NumerickaKonstanta]
+                                NemaListaMulFact(
+                                ) [NemaListaMulFact]
+                              ) [Term]
+                              NemaListeOperacija(
+                              ) [NemaListeOperacija]
+                            ) [IzrazExprassa]
+                          ) [ObicanExpr]
+                        ) [CondFactd]
+                        NemaListaCondFact(
+                        ) [NemaListaCondFact]
+                      ) [CCondTerm]
+                      NemaListaCondTerm(
+                      ) [NemaListaCondTerm]
+                    ) [Condition]
+                    MatchedStmt(
+                      DesignatorStatement(
+                        DodelaVrednostiDes(
+                          ObicanBroj(
+                           pom2
+                          ) [ObicanBroj]
+                          Izjednacavanje(
+                          ) [Izjednacavanje]
+                          ObicanExpr(
+                            IzrazExprassa(
+                              NemaMinusa(
+                              ) [NemaMinusa]
+                              Term(
+                                NumerickaKonstanta(
+                                 1
+                                ) [NumerickaKonstanta]
+                                NemaListaMulFact(
+                                ) [NemaListaMulFact]
+                              ) [Term]
+                              NemaListeOperacija(
+                              ) [NemaListeOperacija]
+                            ) [IzrazExprassa]
+                          ) [ObicanExpr]
+                        ) [DodelaVrednostiDes]
+                      ) [DesignatorStatement]
+                    ) [MatchedStmt]
+                  ) [UnmatchedIf]
+                ) [IfNaredba]
+              ) [MatchedStmt]
+            ) [StatementListaPostoji]
+            MatchedStmt(
+              PrintNaredba(
+                ObicanExpr(
+                  IzrazExprassa(
+                    NemaMinusa(
+                    ) [NemaMinusa]
+                    Term(
+                      FactorDesignator(
+                        ObicanBroj(
+                         n
+                        ) [ObicanBroj]
+                      ) [FactorDesignator]
+                      NemaListaMulFact(
+                      ) [NemaListaMulFact]
+                    ) [Term]
+                    NemaListeOperacija(
+                    ) [NemaListeOperacija]
+                  ) [IzrazExprassa]
+                ) [ObicanExpr]
+                PostojiNumerickaKonstanta(
+                 3
+                ) [PostojiNumerickaKonstanta]
+              ) [PrintNaredba]
+            ) [MatchedStmt]
+          ) [StatementListaPostoji]
+          MatchedStmt(
+            ReturnNaredba(
+              PostojiExpr(
+                ObicanExpr(
+                  IzrazExprassa(
+                    NemaMinusa(
+                    ) [NemaMinusa]
+                    Term(
+                      FactorDesignator(
+                        ObicanBroj(
+                         pom2
+                        ) [ObicanBroj]
+                      ) [FactorDesignator]
+                      NemaListaMulFact(
+                      ) [NemaListaMulFact]
+                    ) [Term]
+                    NemaListeOperacija(
+                    ) [NemaListeOperacija]
+                  ) [IzrazExprassa]
+                ) [ObicanExpr]
+              ) [PostojiExpr]
+            ) [ReturnNaredba]
+          ) [MatchedStmt]
+        ) [StatementListaPostoji]
+      ) [ZavrsenaFunkcija]
+    ) [JesteListaMethodDec]
+    ZavrsenaFunkcija(
+      PovratnaVrVoid(
+       main
+      ) [PovratnaVrVoid]
+      NemaParaetaraFunkcije(
+      ) [NemaParaetaraFunkcije]
+      NijeListaaa(
+      ) [NijeListaaa]
+      StatementListaPostoji(
+        StatementListaPostoji(
+          StatementListaPostoji(
+            StatementListaPostoji(
+              StatementListaPostoji(
+                StatementListaPostoji(
+                  StatementListaPostoji(
+                    StatementListaPostoji(
+                      StatementListaPostoji(
+                        StatementListaPostoji(
+                          StatementListaPostoji(
+                            StatementListaPostoji(
+                              StatementListaPostoji(
+                                StatementListaPostoji(
+                                  StatementListaPostoji(
+                                    StatementListaPostoji(
+                                      StatementListaPostoji(
+                                        StatementListaPostoji(
+                                          StatementListaPostoji(
+                                            StatementListaPostoji(
+                                              StatementListaPostoji(
+                                                StatementListaPostoji(
+                                                  StatementListaPostoji(
+                                                    StatementListaNePostoji(
+                                                    ) [StatementListaNePostoji]
+                                                    MatchedStmt(
+                                                      DesignatorStatement(
+                                                        DodelaVrednostiDes(
+                                                          ObicanBroj(
+                                                           niz
+                                                          ) [ObicanBroj]
+                                                          Izjednacavanje(
+                                                          ) [Izjednacavanje]
+                                                          ObicanExpr(
+                                                            IzrazExprassa(
+                                                              NemaMinusa(
+                                                              ) [NemaMinusa]
+                                                              Term(
+                                                                NovSimbol(
+                                                                  NewSimbol(
+                                                                    Type(
+                                                                     int
+                                                                    ) [Type]
+                                                                    PostojeNoviIzarzi(
+                                                                      ObicanExpr(
+                                                                        IzrazExprassa(
+                                                                          NemaMinusa(
+                                                                          ) [NemaMinusa]
+                                                                          Term(
+                                                                            NumerickaKonstanta(
+                                                                             8
+                                                                            ) [NumerickaKonstanta]
+                                                                            NemaListaMulFact(
+                                                                            ) [NemaListaMulFact]
+                                                                          ) [Term]
+                                                                          NemaListeOperacija(
+                                                                          ) [NemaListeOperacija]
+                                                                        ) [IzrazExprassa]
+                                                                      ) [ObicanExpr]
+                                                                    ) [PostojeNoviIzarzi]
+                                                                  ) [NewSimbol]
+                                                                ) [NovSimbol]
+                                                                NemaListaMulFact(
+                                                                ) [NemaListaMulFact]
+                                                              ) [Term]
+                                                              NemaListeOperacija(
+                                                              ) [NemaListeOperacija]
+                                                            ) [IzrazExprassa]
+                                                          ) [ObicanExpr]
+                                                        ) [DodelaVrednostiDes]
+                                                      ) [DesignatorStatement]
+                                                    ) [MatchedStmt]
+                                                  ) [StatementListaPostoji]
+                                                  MatchedStmt(
+                                                    DesignatorStatement(
+                                                      DodelaVrednostiDes(
+                                                        ObicanBroj(
+                                                         niz2
+                                                        ) [ObicanBroj]
+                                                        Izjednacavanje(
+                                                        ) [Izjednacavanje]
+                                                        ObicanExpr(
+                                                          IzrazExprassa(
+                                                            NemaMinusa(
+                                                            ) [NemaMinusa]
+                                                            Term(
+                                                              NovSimbol(
+                                                                NewSimbol(
+                                                                  Type(
+                                                                   int
+                                                                  ) [Type]
+                                                                  PostojeNoviIzarzi(
+                                                                    ObicanExpr(
+                                                                      IzrazExprassa(
+                                                                        NemaMinusa(
+                                                                        ) [NemaMinusa]
+                                                                        Term(
+                                                                          NumerickaKonstanta(
+                                                                           8
+                                                                          ) [NumerickaKonstanta]
+                                                                          NemaListaMulFact(
+                                                                          ) [NemaListaMulFact]
+                                                                        ) [Term]
+                                                                        NemaListeOperacija(
+                                                                        ) [NemaListeOperacija]
+                                                                      ) [IzrazExprassa]
+                                                                    ) [ObicanExpr]
+                                                                  ) [PostojeNoviIzarzi]
+                                                                ) [NewSimbol]
+                                                              ) [NovSimbol]
+                                                              NemaListaMulFact(
+                                                              ) [NemaListaMulFact]
+                                                            ) [Term]
+                                                            NemaListeOperacija(
+                                                            ) [NemaListeOperacija]
+                                                          ) [IzrazExprassa]
+                                                        ) [ObicanExpr]
+                                                      ) [DodelaVrednostiDes]
+                                                    ) [DesignatorStatement]
+                                                  ) [MatchedStmt]
+                                                ) [StatementListaPostoji]
+                                                MatchedStmt(
+                                                  DesignatorStatement(
+                                                    DodelaVrednostiDes(
+                                                      DesignatorNiz(
+                                                        ElementNiza(
+                                                         niz
+                                                        ) [ElementNiza]
+                                                        ObicanExpr(
+                                                          IzrazExprassa(
+                                                            NemaMinusa(
+                                                            ) [NemaMinusa]
+                                                            Term(
+                                                              NumerickaKonstanta(
+                                                               0
+                                                              ) [NumerickaKonstanta]
+                                                              NemaListaMulFact(
+                                                              ) [NemaListaMulFact]
+                                                            ) [Term]
+                                                            NemaListeOperacija(
+                                                            ) [NemaListeOperacija]
+                                                          ) [IzrazExprassa]
+                                                        ) [ObicanExpr]
+                                                      ) [DesignatorNiz]
+                                                      Izjednacavanje(
+                                                      ) [Izjednacavanje]
+                                                      ObicanExpr(
+                                                        IzrazExprassa(
+                                                          NemaMinusa(
+                                                          ) [NemaMinusa]
+                                                          Term(
+                                                            FactorDesignator(
+                                                              ObicanBroj(
+                                                               jedan
+                                                              ) [ObicanBroj]
+                                                            ) [FactorDesignator]
+                                                            NemaListaMulFact(
+                                                            ) [NemaListaMulFact]
+                                                          ) [Term]
+                                                          NemaListeOperacija(
+                                                          ) [NemaListeOperacija]
+                                                        ) [IzrazExprassa]
+                                                      ) [ObicanExpr]
+                                                    ) [DodelaVrednostiDes]
+                                                  ) [DesignatorStatement]
+                                                ) [MatchedStmt]
+                                              ) [StatementListaPostoji]
+                                              MatchedStmt(
+                                                DesignatorStatement(
+                                                  DodelaVrednostiDes(
+                                                    DesignatorNiz(
+                                                      ElementNiza(
+                                                       niz
+                                                      ) [ElementNiza]
+                                                      ObicanExpr(
+                                                        IzrazExprassa(
+                                                          NemaMinusa(
+                                                          ) [NemaMinusa]
+                                                          Term(
+                                                            NumerickaKonstanta(
+                                                             1
+                                                            ) [NumerickaKonstanta]
+                                                            NemaListaMulFact(
+                                                            ) [NemaListaMulFact]
+                                                          ) [Term]
+                                                          NemaListeOperacija(
+                                                          ) [NemaListeOperacija]
+                                                        ) [IzrazExprassa]
+                                                      ) [ObicanExpr]
+                                                    ) [DesignatorNiz]
+                                                    Izjednacavanje(
+                                                    ) [Izjednacavanje]
+                                                    ObicanExpr(
+                                                      IzrazExprassa(
+                                                        NemaMinusa(
+                                                        ) [NemaMinusa]
+                                                        Term(
+                                                          NumerickaKonstanta(
+                                                           2
+                                                          ) [NumerickaKonstanta]
+                                                          NemaListaMulFact(
+                                                          ) [NemaListaMulFact]
+                                                        ) [Term]
+                                                        NemaListeOperacija(
+                                                        ) [NemaListeOperacija]
+                                                      ) [IzrazExprassa]
+                                                    ) [ObicanExpr]
+                                                  ) [DodelaVrednostiDes]
+                                                ) [DesignatorStatement]
+                                              ) [MatchedStmt]
+                                            ) [StatementListaPostoji]
+                                            MatchedStmt(
+                                              DesignatorStatement(
+                                                UnarniPlusPlus(
+                                                  DesignatorNiz(
+                                                    ElementNiza(
+                                                     niz
+                                                    ) [ElementNiza]
+                                                    ObicanExpr(
+                                                      IzrazExprassa(
+                                                        NemaMinusa(
+                                                        ) [NemaMinusa]
+                                                        Term(
+                                                          NumerickaKonstanta(
+                                                           1
+                                                          ) [NumerickaKonstanta]
+                                                          NemaListaMulFact(
+                                                          ) [NemaListaMulFact]
+                                                        ) [Term]
+                                                        NemaListeOperacija(
+                                                        ) [NemaListeOperacija]
+                                                      ) [IzrazExprassa]
+                                                    ) [ObicanExpr]
+                                                  ) [DesignatorNiz]
+                                                ) [UnarniPlusPlus]
+                                              ) [DesignatorStatement]
+                                            ) [MatchedStmt]
+                                          ) [StatementListaPostoji]
+                                          MatchedStmt(
+                                            DesignatorStatement(
+                                              DodelaVrednostiDes(
+                                                ObicanBroj(
+                                                 ibool
+                                                ) [ObicanBroj]
+                                                Izjednacavanje(
+                                                ) [Izjednacavanje]
+                                                ObicanExpr(
+                                                  IzrazExprassa(
+                                                    NemaMinusa(
+                                                    ) [NemaMinusa]
+                                                    Term(
+                                                      BoolKonstanta(
+                                                       true
+                                                      ) [BoolKonstanta]
+                                                      NemaListaMulFact(
+                                                      ) [NemaListaMulFact]
+                                                    ) [Term]
+                                                    NemaListeOperacija(
+                                                    ) [NemaListeOperacija]
+                                                  ) [IzrazExprassa]
+                                                ) [ObicanExpr]
+                                              ) [DodelaVrednostiDes]
+                                            ) [DesignatorStatement]
+                                          ) [MatchedStmt]
+                                        ) [StatementListaPostoji]
+                                        MatchedStmt(
+                                          DesignatorStatement(
+                                            DodelaVrednostiDes(
+                                              ObicanBroj(
+                                               niz2
+                                              ) [ObicanBroj]
+                                              Izjednacavanje(
+                                              ) [Izjednacavanje]
+                                              ObicanExpr(
+                                                IzrazExprassa(
+                                                  NemaMinusa(
+                                                  ) [NemaMinusa]
+                                                  Term(
+                                                    FactorDesignator(
+                                                      ObicanBroj(
+                                                       niz
+                                                      ) [ObicanBroj]
+                                                    ) [FactorDesignator]
+                                                    NemaListaMulFact(
+                                                    ) [NemaListaMulFact]
+                                                  ) [Term]
+                                                  NemaListeOperacija(
+                                                  ) [NemaListeOperacija]
+                                                ) [IzrazExprassa]
+                                              ) [ObicanExpr]
+                                            ) [DodelaVrednostiDes]
+                                          ) [DesignatorStatement]
+                                        ) [MatchedStmt]
+                                      ) [StatementListaPostoji]
+                                      UnmatchedStmt(
+                                        UnmatchedIf(
+                                          Condition(
+                                            CCondTerm(
+                                              CondFactd(
+                                                ExpoPrvi(
+                                                  ObicanExpr(
+                                                    IzrazExprassa(
+                                                      NemaMinusa(
+                                                      ) [NemaMinusa]
+                                                      Term(
+                                                        FactorDesignator(
+                                                          DesignatorNiz(
+                                                            ElementNiza(
+                                                             niz
+                                                            ) [ElementNiza]
+                                                            ObicanExpr(
+                                                              IzrazExprassa(
+                                                                NemaMinusa(
+                                                                ) [NemaMinusa]
+                                                                Term(
+                                                                  NumerickaKonstanta(
+                                                                   0
+                                                                  ) [NumerickaKonstanta]
+                                                                  NemaListaMulFact(
+                                                                  ) [NemaListaMulFact]
+                                                                ) [Term]
+                                                                NemaListeOperacija(
+                                                                ) [NemaListeOperacija]
+                                                              ) [IzrazExprassa]
+                                                            ) [ObicanExpr]
+                                                          ) [DesignatorNiz]
+                                                        ) [FactorDesignator]
+                                                        NemaListaMulFact(
+                                                        ) [NemaListaMulFact]
+                                                      ) [Term]
+                                                      NemaListeOperacija(
+                                                      ) [NemaListeOperacija]
+                                                    ) [IzrazExprassa]
+                                                  ) [ObicanExpr]
+                                                  Isto(
+                                                  ) [Isto]
+                                                ) [ExpoPrvi]
+                                                ObicanExpr(
+                                                  IzrazExprassa(
+                                                    NemaMinusa(
+                                                    ) [NemaMinusa]
+                                                    Term(
+                                                      FactorDesignator(
+                                                        DesignatorNiz(
+                                                          ElementNiza(
+                                                           niz2
+                                                          ) [ElementNiza]
+                                                          ObicanExpr(
+                                                            IzrazExprassa(
+                                                              NemaMinusa(
+                                                              ) [NemaMinusa]
+                                                              Term(
+                                                                NumerickaKonstanta(
+                                                                 0
+                                                                ) [NumerickaKonstanta]
+                                                                NemaListaMulFact(
+                                                                ) [NemaListaMulFact]
+                                                              ) [Term]
+                                                              NemaListeOperacija(
+                                                              ) [NemaListeOperacija]
+                                                            ) [IzrazExprassa]
+                                                          ) [ObicanExpr]
+                                                        ) [DesignatorNiz]
+                                                      ) [FactorDesignator]
+                                                      NemaListaMulFact(
+                                                      ) [NemaListaMulFact]
+                                                    ) [Term]
+                                                    NemaListeOperacija(
+                                                    ) [NemaListeOperacija]
+                                                  ) [IzrazExprassa]
+                                                ) [ObicanExpr]
+                                              ) [CondFactd]
+                                              NemaListaCondFact(
+                                              ) [NemaListaCondFact]
+                                            ) [CCondTerm]
+                                            NemaListaCondTerm(
+                                            ) [NemaListaCondTerm]
+                                          ) [Condition]
+                                          MatchedStmt(
+                                            PrintNaredba(
+                                              ObicanExpr(
+                                                IzrazExprassa(
+                                                  NemaMinusa(
+                                                  ) [NemaMinusa]
+                                                  Term(
+                                                    KarakterKonst(
+                                                     't'
+                                                    ) [KarakterKonst]
+                                                    NemaListaMulFact(
+                                                    ) [NemaListaMulFact]
+                                                  ) [Term]
+                                                  NemaListeOperacija(
+                                                  ) [NemaListeOperacija]
+                                                ) [IzrazExprassa]
+                                              ) [ObicanExpr]
+                                              NePostojiNumerickaKonstanta(
+                                              ) [NePostojiNumerickaKonstanta]
+                                            ) [PrintNaredba]
+                                          ) [MatchedStmt]
+                                        ) [UnmatchedIf]
+                                      ) [UnmatchedStmt]
+                                    ) [StatementListaPostoji]
+                                    MatchedStmt(
+                                      PrintNaredba(
+                                        ObicanExpr(
+                                          IzrazExprassa(
+                                            NemaMinusa(
+                                            ) [NemaMinusa]
+                                            Term(
+                                              Pozivi(
+                                                PomocniPostoji(
+                                                  ObicanBroj(
+                                                   zamena
+                                                  ) [ObicanBroj]
+                                                  PostojiActPars(
+                                                    ActParsListaPostoji(
+                                                      ActParsic(
+                                                        ActParsPrvi(
+                                                          ObicanExpr(
+                                                            IzrazExprassa(
+                                                              NemaMinusa(
+                                                              ) [NemaMinusa]
+                                                              Term(
+                                                                FactorDesignator(
+                                                                  ObicanBroj(
+                                                                   niz
+                                                                  ) [ObicanBroj]
+                                                                ) [FactorDesignator]
+                                                                NemaListaMulFact(
+                                                                ) [NemaListaMulFact]
+                                                              ) [Term]
+                                                              NemaListeOperacija(
+                                                              ) [NemaListeOperacija]
+                                                            ) [IzrazExprassa]
+                                                          ) [ObicanExpr]
+                                                        ) [ActParsPrvi]
+                                                        ListaExpresion(
+                                                          ListaExpresion(
+                                                            NemaExpresion(
+                                                            ) [NemaExpresion]
+                                                            ObicanExpr(
+                                                              IzrazExprassa(
+                                                                NemaMinusa(
+                                                                ) [NemaMinusa]
+                                                                Term(
+                                                                  NumerickaKonstanta(
+                                                                   0
+                                                                  ) [NumerickaKonstanta]
+                                                                  NemaListaMulFact(
+                                                                  ) [NemaListaMulFact]
+                                                                ) [Term]
+                                                                NemaListeOperacija(
+                                                                ) [NemaListeOperacija]
+                                                              ) [IzrazExprassa]
+                                                            ) [ObicanExpr]
+                                                          ) [ListaExpresion]
+                                                          ObicanExpr(
+                                                            IzrazExprassa(
+                                                              NemaMinusa(
+                                                              ) [NemaMinusa]
+                                                              Term(
+                                                                NumerickaKonstanta(
+                                                                 1
+                                                                ) [NumerickaKonstanta]
+                                                                NemaListaMulFact(
+                                                                ) [NemaListaMulFact]
+                                                              ) [Term]
+                                                              NemaListeOperacija(
+                                                              ) [NemaListeOperacija]
+                                                            ) [IzrazExprassa]
+                                                          ) [ObicanExpr]
+                                                        ) [ListaExpresion]
+                                                      ) [ActParsic]
+                                                    ) [ActParsListaPostoji]
+                                                  ) [PostojiActPars]
+                                                ) [PomocniPostoji]
+                                              ) [Pozivi]
+                                              NemaListaMulFact(
+                                              ) [NemaListaMulFact]
+                                            ) [Term]
+                                            NemaListeOperacija(
+                                            ) [NemaListeOperacija]
+                                          ) [IzrazExprassa]
+                                        ) [ObicanExpr]
+                                        NePostojiNumerickaKonstanta(
+                                        ) [NePostojiNumerickaKonstanta]
+                                      ) [PrintNaredba]
+                                    ) [MatchedStmt]
+                                  ) [StatementListaPostoji]
+                                  MatchedStmt(
+                                    PrintNaredba(
+                                      ObicanExpr(
+                                        IzrazExprassa(
+                                          NemaMinusa(
+                                          ) [NemaMinusa]
+                                          Term(
+                                            FactorDesignator(
+                                              DesignatorNiz(
+                                                ElementNiza(
+                                                 niz
+                                                ) [ElementNiza]
+                                                ObicanExpr(
+                                                  IzrazExprassa(
+                                                    NemaMinusa(
+                                                    ) [NemaMinusa]
+                                                    Term(
+                                                      NumerickaKonstanta(
+                                                       0
+                                                      ) [NumerickaKonstanta]
+                                                      NemaListaMulFact(
+                                                      ) [NemaListaMulFact]
+                                                    ) [Term]
+                                                    NemaListeOperacija(
+                                                    ) [NemaListeOperacija]
+                                                  ) [IzrazExprassa]
+                                                ) [ObicanExpr]
+                                              ) [DesignatorNiz]
+                                            ) [FactorDesignator]
+                                            NemaListaMulFact(
+                                            ) [NemaListaMulFact]
+                                          ) [Term]
+                                          NemaListeOperacija(
+                                          ) [NemaListeOperacija]
+                                        ) [IzrazExprassa]
+                                      ) [ObicanExpr]
+                                      NePostojiNumerickaKonstanta(
+                                      ) [NePostojiNumerickaKonstanta]
+                                    ) [PrintNaredba]
+                                  ) [MatchedStmt]
+                                ) [StatementListaPostoji]
+                                MatchedStmt(
+                                  PrintNaredba(
+                                    ObicanExpr(
+                                      IzrazExprassa(
+                                        NemaMinusa(
+                                        ) [NemaMinusa]
+                                        Term(
+                                          FactorDesignator(
+                                            DesignatorNiz(
+                                              ElementNiza(
+                                               niz
+                                              ) [ElementNiza]
+                                              ObicanExpr(
+                                                IzrazExprassa(
+                                                  NemaMinusa(
+                                                  ) [NemaMinusa]
+                                                  Term(
+                                                    NumerickaKonstanta(
+                                                     1
+                                                    ) [NumerickaKonstanta]
+                                                    NemaListaMulFact(
+                                                    ) [NemaListaMulFact]
+                                                  ) [Term]
+                                                  NemaListeOperacija(
+                                                  ) [NemaListeOperacija]
+                                                ) [IzrazExprassa]
+                                              ) [ObicanExpr]
+                                            ) [DesignatorNiz]
+                                          ) [FactorDesignator]
+                                          NemaListaMulFact(
+                                          ) [NemaListaMulFact]
+                                        ) [Term]
+                                        NemaListeOperacija(
+                                        ) [NemaListeOperacija]
+                                      ) [IzrazExprassa]
+                                    ) [ObicanExpr]
+                                    NePostojiNumerickaKonstanta(
+                                    ) [NePostojiNumerickaKonstanta]
+                                  ) [PrintNaredba]
+                                ) [MatchedStmt]
+                              ) [StatementListaPostoji]
+                              UnmatchedStmt(
+                                UnmatchedIfElse(
+                                  Condition(
+                                    CCondTerm(
+                                      CondFactd(
+                                        ExpoPrvi(
+                                          ObicanExpr(
+                                            IzrazExprassa(
+                                              NemaMinusa(
+                                              ) [NemaMinusa]
+                                              Term(
+                                                Pozivi(
+                                                  PomocniPostoji(
+                                                    ObicanBroj(
+                                                     zamena
+                                                    ) [ObicanBroj]
+                                                    PostojiActPars(
+                                                      ActParsListaPostoji(
+                                                        ActParsic(
+                                                          ActParsPrvi(
+                                                            ObicanExpr(
+                                                              IzrazExprassa(
+                                                                NemaMinusa(
+                                                                ) [NemaMinusa]
+                                                                Term(
+                                                                  FactorDesignator(
+                                                                    ObicanBroj(
+                                                                     niz
+                                                                    ) [ObicanBroj]
+                                                                  ) [FactorDesignator]
+                                                                  NemaListaMulFact(
+                                                                  ) [NemaListaMulFact]
+                                                                ) [Term]
+                                                                NemaListeOperacija(
+                                                                ) [NemaListeOperacija]
+                                                              ) [IzrazExprassa]
+                                                            ) [ObicanExpr]
+                                                          ) [ActParsPrvi]
+                                                          ListaExpresion(
+                                                            ListaExpresion(
+                                                              NemaExpresion(
+                                                              ) [NemaExpresion]
+                                                              ObicanExpr(
+                                                                IzrazExprassa(
+                                                                  NemaMinusa(
+                                                                  ) [NemaMinusa]
+                                                                  Term(
+                                                                    NumerickaKonstanta(
+                                                                     0
+                                                                    ) [NumerickaKonstanta]
+                                                                    NemaListaMulFact(
+                                                                    ) [NemaListaMulFact]
+                                                                  ) [Term]
+                                                                  NemaListeOperacija(
+                                                                  ) [NemaListeOperacija]
+                                                                ) [IzrazExprassa]
+                                                              ) [ObicanExpr]
+                                                            ) [ListaExpresion]
+                                                            ObicanExpr(
+                                                              IzrazExprassa(
+                                                                NemaMinusa(
+                                                                ) [NemaMinusa]
+                                                                Term(
+                                                                  NumerickaKonstanta(
+                                                                   9
+                                                                  ) [NumerickaKonstanta]
+                                                                  NemaListaMulFact(
+                                                                  ) [NemaListaMulFact]
+                                                                ) [Term]
+                                                                NemaListeOperacija(
+                                                                ) [NemaListeOperacija]
+                                                              ) [IzrazExprassa]
+                                                            ) [ObicanExpr]
+                                                          ) [ListaExpresion]
+                                                        ) [ActParsic]
+                                                      ) [ActParsListaPostoji]
+                                                    ) [PostojiActPars]
+                                                  ) [PomocniPostoji]
+                                                ) [Pozivi]
+                                                NemaListaMulFact(
+                                                ) [NemaListaMulFact]
+                                              ) [Term]
+                                              ListaOperacijaPostoji(
+                                                NemaListeOperacija(
+                                                ) [NemaListeOperacija]
+                                                JednaOperacija(
+                                                  Sabiranje(
+                                                  ) [Sabiranje]
+                                                  Term(
+                                                    NumerickaKonstanta(
+                                                     1
+                                                    ) [NumerickaKonstanta]
+                                                    NemaListaMulFact(
+                                                    ) [NemaListaMulFact]
+                                                  ) [Term]
+                                                ) [JednaOperacija]
+                                              ) [ListaOperacijaPostoji]
+                                            ) [IzrazExprassa]
+                                          ) [ObicanExpr]
+                                          Razlicito(
+                                          ) [Razlicito]
+                                        ) [ExpoPrvi]
+                                        ObicanExpr(
+                                          IzrazExprassa(
+                                            NemaMinusa(
+                                            ) [NemaMinusa]
+                                            Term(
+                                              NumerickaKonstanta(
+                                               0
+                                              ) [NumerickaKonstanta]
+                                              NemaListaMulFact(
+                                              ) [NemaListaMulFact]
+                                            ) [Term]
+                                            NemaListeOperacija(
+                                            ) [NemaListeOperacija]
+                                          ) [IzrazExprassa]
+                                        ) [ObicanExpr]
+                                      ) [CondFactd]
+                                      NemaListaCondFact(
+                                      ) [NemaListaCondFact]
+                                    ) [CCondTerm]
+                                    NemaListaCondTerm(
+                                    ) [NemaListaCondTerm]
+                                  ) [Condition]
+                                  JosStatement(
+                                    StatementListaPostoji(
+                                      StatementListaPostoji(
+                                        StatementListaNePostoji(
+                                        ) [StatementListaNePostoji]
+                                        MatchedStmt(
+                                          PrintNaredba(
+                                            ObicanExpr(
+                                              IzrazExprassa(
+                                                NemaMinusa(
+                                                ) [NemaMinusa]
+                                                Term(
+                                                  KarakterKonst(
+                                                   ':'
+                                                  ) [KarakterKonst]
+                                                  NemaListaMulFact(
+                                                  ) [NemaListaMulFact]
+                                                ) [Term]
+                                                NemaListeOperacija(
+                                                ) [NemaListeOperacija]
+                                              ) [IzrazExprassa]
+                                            ) [ObicanExpr]
+                                            NePostojiNumerickaKonstanta(
+                                            ) [NePostojiNumerickaKonstanta]
+                                          ) [PrintNaredba]
+                                        ) [MatchedStmt]
+                                      ) [StatementListaPostoji]
+                                      MatchedStmt(
+                                        PrintNaredba(
+                                          ObicanExpr(
+                                            IzrazExprassa(
+                                              NemaMinusa(
+                                              ) [NemaMinusa]
+                                              Term(
+                                                KarakterKonst(
+                                                 '('
+                                                ) [KarakterKonst]
+                                                NemaListaMulFact(
+                                                ) [NemaListaMulFact]
+                                              ) [Term]
+                                              NemaListeOperacija(
+                                              ) [NemaListeOperacija]
+                                            ) [IzrazExprassa]
+                                          ) [ObicanExpr]
+                                          NePostojiNumerickaKonstanta(
+                                          ) [NePostojiNumerickaKonstanta]
+                                        ) [PrintNaredba]
+                                      ) [MatchedStmt]
+                                    ) [StatementListaPostoji]
+                                  ) [JosStatement]
+                                  ElseNaredba(
+                                  ) [ElseNaredba]
+                                  IfNaredba(
+                                    Condition(
+                                      CCondTerm(
+                                        CondFactd(
+                                          ExpoPrvi(
+                                            ObicanExpr(
+                                              IzrazExprassa(
+                                                NemaMinusa(
+                                                ) [NemaMinusa]
+                                                Term(
+                                                  NumerickaKonstanta(
+                                                   1
+                                                  ) [NumerickaKonstanta]
+                                                  NemaListaMulFact(
+                                                  ) [NemaListaMulFact]
+                                                ) [Term]
+                                                NemaListeOperacija(
+                                                ) [NemaListeOperacija]
+                                              ) [IzrazExprassa]
+                                            ) [ObicanExpr]
+                                            Isto(
+                                            ) [Isto]
+                                          ) [ExpoPrvi]
+                                          ObicanExpr(
+                                            IzrazExprassa(
+                                              NemaMinusa(
+                                              ) [NemaMinusa]
+                                              Term(
+                                                NumerickaKonstanta(
+                                                 5
+                                                ) [NumerickaKonstanta]
+                                                NemaListaMulFact(
+                                                ) [NemaListaMulFact]
+                                              ) [Term]
+                                              NemaListeOperacija(
+                                              ) [NemaListeOperacija]
+                                            ) [IzrazExprassa]
+                                          ) [ObicanExpr]
+                                        ) [CondFactd]
+                                        NemaListaCondFact(
+                                        ) [NemaListaCondFact]
+                                      ) [CCondTerm]
+                                      NemaListaCondTerm(
+                                      ) [NemaListaCondTerm]
+                                    ) [Condition]
+                                    PrintNaredba(
+                                      ObicanExpr(
+                                        IzrazExprassa(
+                                          NemaMinusa(
+                                          ) [NemaMinusa]
+                                          Term(
+                                            KarakterKonst(
+                                             ':'
+                                            ) [KarakterKonst]
+                                            NemaListaMulFact(
+                                            ) [NemaListaMulFact]
+                                          ) [Term]
+                                          NemaListeOperacija(
+                                          ) [NemaListeOperacija]
+                                        ) [IzrazExprassa]
+                                      ) [ObicanExpr]
+                                      NePostojiNumerickaKonstanta(
+                                      ) [NePostojiNumerickaKonstanta]
+                                    ) [PrintNaredba]
+                                    ElseNaredba(
+                                    ) [ElseNaredba]
+                                    UnmatchedIf(
+                                      Condition(
+                                        CCondTerm(
+                                          CondFactd(
+                                            ExpoPrvi(
+                                              ObicanExpr(
+                                                IzrazExprassa(
+                                                  NemaMinusa(
+                                                  ) [NemaMinusa]
+                                                  Term(
+                                                    NumerickaKonstanta(
+                                                     1
+                                                    ) [NumerickaKonstanta]
+                                                    NemaListaMulFact(
+                                                    ) [NemaListaMulFact]
+                                                  ) [Term]
+                                                  NemaListeOperacija(
+                                                  ) [NemaListeOperacija]
+                                                ) [IzrazExprassa]
+                                              ) [ObicanExpr]
+                                              Isto(
+                                              ) [Isto]
+                                            ) [ExpoPrvi]
+                                            ObicanExpr(
+                                              IzrazExprassa(
+                                                NemaMinusa(
+                                                ) [NemaMinusa]
+                                                Term(
+                                                  NumerickaKonstanta(
+                                                   1
+                                                  ) [NumerickaKonstanta]
+                                                  NemaListaMulFact(
+                                                  ) [NemaListaMulFact]
+                                                ) [Term]
+                                                NemaListeOperacija(
+                                                ) [NemaListeOperacija]
+                                              ) [IzrazExprassa]
+                                            ) [ObicanExpr]
+                                          ) [CondFactd]
+                                          NemaListaCondFact(
+                                          ) [NemaListaCondFact]
+                                        ) [CCondTerm]
+                                        NemaListaCondTerm(
+                                        ) [NemaListaCondTerm]
+                                      ) [Condition]
+                                      MatchedStmt(
+                                        JosStatement(
+                                          StatementListaPostoji(
+                                            StatementListaPostoji(
+                                              StatementListaNePostoji(
+                                              ) [StatementListaNePostoji]
+                                              MatchedStmt(
+                                                PrintNaredba(
+                                                  ObicanExpr(
+                                                    IzrazExprassa(
+                                                      NemaMinusa(
+                                                      ) [NemaMinusa]
+                                                      Term(
+                                                        KarakterKonst(
+                                                         ':'
+                                                        ) [KarakterKonst]
+                                                        NemaListaMulFact(
+                                                        ) [NemaListaMulFact]
+                                                      ) [Term]
+                                                      NemaListeOperacija(
+                                                      ) [NemaListeOperacija]
+                                                    ) [IzrazExprassa]
+                                                  ) [ObicanExpr]
+                                                  PostojiNumerickaKonstanta(
+                                                   10
+                                                  ) [PostojiNumerickaKonstanta]
+                                                ) [PrintNaredba]
+                                              ) [MatchedStmt]
+                                            ) [StatementListaPostoji]
+                                            MatchedStmt(
+                                              PrintNaredba(
+                                                ObicanExpr(
+                                                  IzrazExprassa(
+                                                    NemaMinusa(
+                                                    ) [NemaMinusa]
+                                                    Term(
+                                                      KarakterKonst(
+                                                       ')'
+                                                      ) [KarakterKonst]
+                                                      NemaListaMulFact(
+                                                      ) [NemaListaMulFact]
+                                                    ) [Term]
+                                                    NemaListeOperacija(
+                                                    ) [NemaListeOperacija]
+                                                  ) [IzrazExprassa]
+                                                ) [ObicanExpr]
+                                                NePostojiNumerickaKonstanta(
+                                                ) [NePostojiNumerickaKonstanta]
+                                              ) [PrintNaredba]
+                                            ) [MatchedStmt]
+                                          ) [StatementListaPostoji]
+                                        ) [JosStatement]
+                                      ) [MatchedStmt]
+                                    ) [UnmatchedIf]
+                                  ) [IfNaredba]
+                                ) [UnmatchedIfElse]
+                              ) [UnmatchedStmt]
+                            ) [StatementListaPostoji]
+                            MatchedStmt(
+                              PrintNaredba(
+                                ObicanExpr(
+                                  IzrazExprassa(
+                                    NemaMinusa(
+                                    ) [NemaMinusa]
+                                    Term(
+                                      FactorDesignator(
+                                        ObicanBroj(
+                                         eol
+                                        ) [ObicanBroj]
+                                      ) [FactorDesignator]
+                                      NemaListaMulFact(
+                                      ) [NemaListaMulFact]
+                                    ) [Term]
+                                    NemaListeOperacija(
+                                    ) [NemaListeOperacija]
+                                  ) [IzrazExprassa]
+                                ) [ObicanExpr]
+                                NePostojiNumerickaKonstanta(
+                                ) [NePostojiNumerickaKonstanta]
+                              ) [PrintNaredba]
+                            ) [MatchedStmt]
+                          ) [StatementListaPostoji]
+                          MatchedStmt(
+                            DesignatorStatement(
+                              DodelaVrednostiDes(
+                                ObicanBroj(
+                                 i
+                                ) [ObicanBroj]
+                                Izjednacavanje(
+                                ) [Izjednacavanje]
+                                ObicanExpr(
+                                  IzrazExprassa(
+                                    NemaMinusa(
+                                    ) [NemaMinusa]
+                                    Term(
+                                      NumerickaKonstanta(
+                                       10
+                                      ) [NumerickaKonstanta]
+                                      NemaListaMulFact(
+                                      ) [NemaListaMulFact]
+                                    ) [Term]
+                                    NemaListeOperacija(
+                                    ) [NemaListeOperacija]
+                                  ) [IzrazExprassa]
+                                ) [ObicanExpr]
+                              ) [DodelaVrednostiDes]
+                            ) [DesignatorStatement]
+                          ) [MatchedStmt]
+                        ) [StatementListaPostoji]
+                        MatchedStmt(
+                          DesignatorStatement(
+                            DodelaVrednostiDes(
+                              ObicanBroj(
+                               fakt
+                              ) [ObicanBroj]
+                              Izjednacavanje(
+                              ) [Izjednacavanje]
+                              ObicanExpr(
+                                IzrazExprassa(
+                                  NemaMinusa(
+                                  ) [NemaMinusa]
+                                  Term(
+                                    Pozivi(
+                                      PomocniPostoji(
+                                        ObicanBroj(
+                                         faktorijel
+                                        ) [ObicanBroj]
+                                        PostojiActPars(
+                                          ActParsListaPostoji(
+                                            ActParsic(
+                                              ActParsPrvi(
+                                                ObicanExpr(
+                                                  IzrazExprassa(
+                                                    NemaMinusa(
+                                                    ) [NemaMinusa]
+                                                    Term(
+                                                      FactorDesignator(
+                                                        ObicanBroj(
+                                                         i
+                                                        ) [ObicanBroj]
+                                                      ) [FactorDesignator]
+                                                      NemaListaMulFact(
+                                                      ) [NemaListaMulFact]
+                                                    ) [Term]
+                                                    NemaListeOperacija(
+                                                    ) [NemaListeOperacija]
+                                                  ) [IzrazExprassa]
+                                                ) [ObicanExpr]
+                                              ) [ActParsPrvi]
+                                              NemaExpresion(
+                                              ) [NemaExpresion]
+                                            ) [ActParsic]
+                                          ) [ActParsListaPostoji]
+                                        ) [PostojiActPars]
+                                      ) [PomocniPostoji]
+                                    ) [Pozivi]
+                                    NemaListaMulFact(
+                                    ) [NemaListaMulFact]
+                                  ) [Term]
+                                  NemaListeOperacija(
+                                  ) [NemaListeOperacija]
+                                ) [IzrazExprassa]
+                              ) [ObicanExpr]
+                            ) [DodelaVrednostiDes]
+                          ) [DesignatorStatement]
+                        ) [MatchedStmt]
+                      ) [StatementListaPostoji]
+                      MatchedStmt(
+                        PrintNaredba(
+                          ObicanExpr(
+                            IzrazExprassa(
+                              NemaMinusa(
+                              ) [NemaMinusa]
+                              Term(
+                                FactorDesignator(
+                                  ObicanBroj(
+                                   eol
+                                  ) [ObicanBroj]
+                                ) [FactorDesignator]
+                                NemaListaMulFact(
+                                ) [NemaListaMulFact]
+                              ) [Term]
+                              NemaListeOperacija(
+                              ) [NemaListeOperacija]
+                            ) [IzrazExprassa]
+                          ) [ObicanExpr]
+                          NePostojiNumerickaKonstanta(
+                          ) [NePostojiNumerickaKonstanta]
+                        ) [PrintNaredba]
+                      ) [MatchedStmt]
+                    ) [StatementListaPostoji]
+                    MatchedStmt(
+                      PrintNaredba(
+                        ObicanExpr(
+                          IzrazExprassa(
+                            NemaMinusa(
+                            ) [NemaMinusa]
+                            Term(
+                              FactorDesignator(
+                                ObicanBroj(
+                                 i
+                                ) [ObicanBroj]
+                              ) [FactorDesignator]
+                              NemaListaMulFact(
+                              ) [NemaListaMulFact]
+                            ) [Term]
+                            NemaListeOperacija(
+                            ) [NemaListeOperacija]
+                          ) [IzrazExprassa]
+                        ) [ObicanExpr]
+                        PostojiNumerickaKonstanta(
+                         3
+                        ) [PostojiNumerickaKonstanta]
+                      ) [PrintNaredba]
+                    ) [MatchedStmt]
+                  ) [StatementListaPostoji]
+                  MatchedStmt(
+                    PrintNaredba(
+                      ObicanExpr(
+                        IzrazExprassa(
+                          NemaMinusa(
+                          ) [NemaMinusa]
+                          Term(
+                            KarakterKonst(
+                             '!'
+                            ) [KarakterKonst]
+                            NemaListaMulFact(
+                            ) [NemaListaMulFact]
+                          ) [Term]
+                          NemaListeOperacija(
+                          ) [NemaListeOperacija]
+                        ) [IzrazExprassa]
+                      ) [ObicanExpr]
+                      PostojiNumerickaKonstanta(
+                       3
+                      ) [PostojiNumerickaKonstanta]
+                    ) [PrintNaredba]
+                  ) [MatchedStmt]
+                ) [StatementListaPostoji]
+                MatchedStmt(
+                  PrintNaredba(
+                    ObicanExpr(
+                      IzrazExprassa(
+                        NemaMinusa(
+                        ) [NemaMinusa]
+                        Term(
+                          KarakterKonst(
+                           '='
+                          ) [KarakterKonst]
+                          NemaListaMulFact(
+                          ) [NemaListaMulFact]
+                        ) [Term]
+                        NemaListeOperacija(
+                        ) [NemaListeOperacija]
+                      ) [IzrazExprassa]
+                    ) [ObicanExpr]
+                    PostojiNumerickaKonstanta(
+                     3
+                    ) [PostojiNumerickaKonstanta]
+                  ) [PrintNaredba]
+                ) [MatchedStmt]
+              ) [StatementListaPostoji]
+              MatchedStmt(
+                PrintNaredba(
+                  ObicanExpr(
+                    IzrazExprassa(
+                      NemaMinusa(
+                      ) [NemaMinusa]
+                      Term(
+                        FactorDesignator(
+                          ObicanBroj(
+                           fakt
+                          ) [ObicanBroj]
+                        ) [FactorDesignator]
+                        NemaListaMulFact(
+                        ) [NemaListaMulFact]
+                      ) [Term]
+                      NemaListeOperacija(
+                      ) [NemaListeOperacija]
+                    ) [IzrazExprassa]
+                  ) [ObicanExpr]
+                  PostojiNumerickaKonstanta(
+                   10
+                  ) [PostojiNumerickaKonstanta]
+                ) [PrintNaredba]
+              ) [MatchedStmt]
+            ) [StatementListaPostoji]
+            MatchedStmt(
+              PrintNaredba(
+                ObicanExpr(
+                  IzrazExprassa(
+                    NemaMinusa(
+                    ) [NemaMinusa]
+                    Term(
+                      FactorDesignator(
+                        ObicanBroj(
+                         eol
+                        ) [ObicanBroj]
+                      ) [FactorDesignator]
+                      NemaListaMulFact(
+                      ) [NemaListaMulFact]
+                    ) [Term]
+                    NemaListeOperacija(
+                    ) [NemaListeOperacija]
+                  ) [IzrazExprassa]
+                ) [ObicanExpr]
+                NePostojiNumerickaKonstanta(
+                ) [NePostojiNumerickaKonstanta]
+              ) [PrintNaredba]
+            ) [MatchedStmt]
+          ) [StatementListaPostoji]
+          MatchedStmt(
+            PrintNaredba(
+              ObicanExpr(
+                IzrazExprassa(
+                  NemaMinusa(
+                  ) [NemaMinusa]
+                  Term(
+                    Pozivi(
+                      PomocniPostoji(
+                        ObicanBroj(
+                         slovo
+                        ) [ObicanBroj]
+                        PostojiActPars(
+                          ActParsListaPostoji(
+                            ActParsic(
+                              ActParsPrvi(
+                                ObicanExpr(
+                                  IzrazExprassa(
+                                    NemaMinusa(
+                                    ) [NemaMinusa]
+                                    Term(
+                                      KarakterKonst(
+                                       'a'
+                                      ) [KarakterKonst]
+                                      NemaListaMulFact(
+                                      ) [NemaListaMulFact]
+                                    ) [Term]
+                                    NemaListeOperacija(
+                                    ) [NemaListeOperacija]
+                                  ) [IzrazExprassa]
+                                ) [ObicanExpr]
+                              ) [ActParsPrvi]
+                              ListaExpresion(
+                                NemaExpresion(
+                                ) [NemaExpresion]
+                                ObicanExpr(
+                                  IzrazExprassa(
+                                    NemaMinusa(
+                                    ) [NemaMinusa]
+                                    Term(
+                                      NumerickaKonstanta(
+                                       0
+                                      ) [NumerickaKonstanta]
+                                      NemaListaMulFact(
+                                      ) [NemaListaMulFact]
+                                    ) [Term]
+                                    NemaListeOperacija(
+                                    ) [NemaListeOperacija]
+                                  ) [IzrazExprassa]
+                                ) [ObicanExpr]
+                              ) [ListaExpresion]
+                            ) [ActParsic]
+                          ) [ActParsListaPostoji]
+                        ) [PostojiActPars]
+                      ) [PomocniPostoji]
+                    ) [Pozivi]
+                    NemaListaMulFact(
+                    ) [NemaListaMulFact]
+                  ) [Term]
+                  NemaListeOperacija(
+                  ) [NemaListeOperacija]
+                ) [IzrazExprassa]
+              ) [ObicanExpr]
+              NePostojiNumerickaKonstanta(
+              ) [NePostojiNumerickaKonstanta]
+            ) [PrintNaredba]
+          ) [MatchedStmt]
+        ) [StatementListaPostoji]
+        MatchedStmt(
+          ReturnNaredba(
+            NePostojiExpr(
+            ) [NePostojiExpr]
+          ) [ReturnNaredba]
+        ) [MatchedStmt]
+      ) [StatementListaPostoji]
+    ) [ZavrsenaFunkcija]
+  ) [JesteListaMethodDec]
+) [Program]
+INFO  17:25:54,722 - ===================================
+INFO  17:25:54,722 - Deklarisana je konstanta jedan na liniji 3
+INFO  17:25:54,722 -  Nova Promenljiva  fakt na liniji 5
+INFO  17:25:54,722 -  Nova Promenljiva u ImaJosParametara   na liniji 4
+INFO  17:25:54,722 - Deklarisana promenljiva i tipa int na liniji 5
+INFO  17:25:54,722 -  Deklarisana je nova promenljiva imena fakt na liniji 5
+INFO  17:25:54,722 - Deklarisana promenljiva ibool tipa bool na liniji 6
+INFO  17:25:54,722 - Deklarisan je niz niz tipa int na liniji 8
+INFO  17:25:54,722 - Deklarisan je niz niz2 tipa int na liniji 9
+INFO  17:25:54,722 - Obradjuje se funkcija slovo na liniji 13
+INFO  17:25:54,722 - Deklarisana promenljiva a tipa char na liniji 13
+INFO  17:25:54,722 - Deklarisana promenljiva pom tipa int na liniji 13
+INFO  17:25:54,722 - Return naredba! na liniji 2
+INFO  17:25:54,722 - Za funkciju slovo deklarisana su 2 parametra  na liniji 13
+INFO  17:25:54,722 - Obradjuje se funkcija zamena na liniji 39
+INFO  17:25:54,722 - Deklarisan je niz niz tipa int na liniji 39
+INFO  17:25:54,722 - Deklarisana promenljiva i tipa int na liniji 39
+INFO  17:25:54,722 - Deklarisana promenljiva b tipa int na liniji 39
+INFO  17:25:54,722 - Deklarisana promenljiva pom tipa int na liniji 40
+INFO  17:25:54,722 - Deklarisana promenljiva pom2 tipa int na liniji 40
+INFO  17:25:54,722 - Return naredba! na liniji 45
+INFO  17:25:54,722 - Return naredba! na liniji 4
+INFO  17:25:54,722 - Za funkciju zamena deklarisana su 3 parametra  na liniji 39
+INFO  17:25:54,722 - Obradjuje se funkcija faktorijel na liniji 58
+INFO  17:25:54,722 - Deklarisana promenljiva n tipa int na liniji 58
+INFO  17:25:54,722 - Deklarisana promenljiva pom tipa int na liniji 59
+INFO  17:25:54,722 - Deklarisana promenljiva pom2 tipa int na liniji 59
+INFO  17:25:54,722 - Return naredba! na liniji 2
+INFO  17:25:54,722 - Za funkciju faktorijel deklarisana su 1 parametra  na liniji 58
+INFO  17:25:54,722 - Obradjuje se void funkcija main na liniji 70
+INFO  17:25:54,722 - Za funkciju main deklarisana su 0 parametra  na liniji 70
+INFO  17:25:54,722 - Parsiranje uspesno zavrseno!
